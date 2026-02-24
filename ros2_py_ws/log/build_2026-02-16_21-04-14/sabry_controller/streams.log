@@ -1,0 +1,25 @@
+[2.399s] Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller -- -j5 -l5
+[3.675s] Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller -- -j5 -l5
+[3.736s] Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller
+[4.022s] -- Install configuration: ""
+[4.022s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/launch
+[4.022s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/launch/controller.launch.py
+[4.023s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/launch/bringup.launch.py
+[4.023s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/config
+[4.029s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/config/sabry_controllers.yaml
+[4.029s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/ament_index/resource_index/package_run_dependencies/sabry_controller
+[4.029s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/ament_index/resource_index/parent_prefix_path/sabry_controller
+[4.055s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/environment/ament_prefix_path.sh
+[4.055s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/environment/ament_prefix_path.dsv
+[4.056s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/environment/path.sh
+[4.068s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/environment/path.dsv
+[4.083s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/local_setup.bash
+[4.083s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/local_setup.sh
+[4.084s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/local_setup.zsh
+[4.087s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/local_setup.dsv
+[4.089s] -- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/package.dsv
+[4.106s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/ament_index/resource_index/packages/sabry_controller
+[4.107s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/cmake/sabry_controllerConfig.cmake
+[4.109s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/cmake/sabry_controllerConfig-version.cmake
+[4.111s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/package.xml
+[4.121s] Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller

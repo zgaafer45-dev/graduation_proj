@@ -1,0 +1,4 @@
+source;share/sabrydemo_moveit/local_setup.bash
+source;share/sabrydemo_moveit/local_setup.dsv
+source;share/sabrydemo_moveit/local_setup.sh
+source;share/sabrydemo_moveit/local_setup.zsh

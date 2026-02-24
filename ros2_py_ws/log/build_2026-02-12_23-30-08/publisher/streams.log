@@ -1,0 +1,47 @@
+[2.333s] Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/src/publisher': PYTHONPATH=/home/vboxuser/workspaces/ros2_py_ws/build/publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/publisher build --build-base /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build install --record /home/vboxuser/workspaces/ros2_py_ws/build/publisher/install.log --single-version-externally-managed install_data
+[2.877s] running egg_info
+[2.877s] creating ../../build/publisher/publisher.egg-info
+[2.879s] writing ../../build/publisher/publisher.egg-info/PKG-INFO
+[2.879s] writing dependency_links to ../../build/publisher/publisher.egg-info/dependency_links.txt
+[2.880s] writing entry points to ../../build/publisher/publisher.egg-info/entry_points.txt
+[2.880s] writing requirements to ../../build/publisher/publisher.egg-info/requires.txt
+[2.880s] writing top-level names to ../../build/publisher/publisher.egg-info/top_level.txt
+[2.881s] writing manifest file '../../build/publisher/publisher.egg-info/SOURCES.txt'
+[2.885s] reading manifest file '../../build/publisher/publisher.egg-info/SOURCES.txt'
+[2.888s] writing manifest file '../../build/publisher/publisher.egg-info/SOURCES.txt'
+[2.888s] running build
+[2.888s] running build_py
+[2.888s] creating /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build
+[2.889s] creating /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build/lib
+[2.889s] creating /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build/lib/publisher
+[2.889s] copying publisher/pub.py -> /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build/lib/publisher
+[2.889s] copying publisher/pid_controller.py -> /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build/lib/publisher
+[2.889s] copying publisher/position_controller.py -> /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build/lib/publisher
+[2.889s] copying publisher/microros.py -> /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build/lib/publisher
+[2.890s] copying publisher/__init__.py -> /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build/lib/publisher
+[2.895s] running install
+[2.896s] running install_lib
+[2.898s] creating /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages/publisher
+[2.898s] copying /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build/lib/publisher/pub.py -> /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages/publisher
+[2.898s] copying /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build/lib/publisher/pid_controller.py -> /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages/publisher
+[2.898s] copying /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build/lib/publisher/position_controller.py -> /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages/publisher
+[2.898s] copying /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build/lib/publisher/microros.py -> /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages/publisher
+[2.898s] copying /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build/lib/publisher/__init__.py -> /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages/publisher
+[2.899s] byte-compiling /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages/publisher/pub.py to pub.cpython-310.pyc
+[2.900s] byte-compiling /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages/publisher/pid_controller.py to pid_controller.cpython-310.pyc
+[2.901s] byte-compiling /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages/publisher/position_controller.py to position_controller.cpython-310.pyc
+[2.903s] byte-compiling /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages/publisher/microros.py to microros.cpython-310.pyc
+[2.905s] byte-compiling /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages/publisher/__init__.py to __init__.cpython-310.pyc
+[2.905s] running install_data
+[2.905s] creating /home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/ament_index
+[2.906s] creating /home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/ament_index/resource_index
+[2.906s] creating /home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/ament_index/resource_index/packages
+[2.906s] copying resource/publisher -> /home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/ament_index/resource_index/packages
+[2.907s] copying package.xml -> /home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/publisher
+[2.909s] running install_egg_info
+[2.910s] Copying ../../build/publisher/publisher.egg-info to /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages/publisher-0.0.0-py3.10.egg-info
+[2.913s] running install_scripts
+[2.957s] Installing joint_state_to_microros script to /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/publisher
+[2.957s] Installing pid_stepper_controller script to /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/publisher
+[2.957s] Installing simple_publisher script to /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/publisher
+[2.959s] writing list of installed files to '/home/vboxuser/workspaces/ros2_py_ws/build/publisher/install.log'

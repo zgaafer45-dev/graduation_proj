@@ -1,0 +1,287 @@
+[0.020s] Invoking command in '/home/vboxuser/workspaces/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/install/publisher:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake /home/vboxuser/workspaces/src/uros/micro_ros_msgs -DUAGENT_BUILD_EXECUTABLE=OFF -DUAGENT_P2P_PROFILE=OFF --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX=/home/vboxuser/workspaces/install/micro_ros_msgs
+[0.042s] Not searching for unused variables given on the command line.
+[0.125s] -- The C compiler identification is GNU 11.4.0
+[0.203s] -- The CXX compiler identification is GNU 11.4.0
+[0.214s] -- Detecting C compiler ABI info
+[0.333s] -- Detecting C compiler ABI info - done
+[0.341s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.341s] -- Detecting C compile features
+[0.343s] -- Detecting C compile features - done
+[0.349s] -- Detecting CXX compiler ABI info
+[0.488s] -- Detecting CXX compiler ABI info - done
+[0.495s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.495s] -- Detecting CXX compile features
+[0.496s] -- Detecting CXX compile features - done
+[0.499s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.721s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.875s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.891s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.916s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.082s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.185s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.557s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.840s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.180s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.215s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.222s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.271s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.272s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.272s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.272s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.298s] -- Found PythonExtra: .so  
+[2.351s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.364s] -- Added test 'lint_cmake' to check CMake code style
+[2.370s] -- Added test 'xmllint' to check XML markup files
+[2.402s] -- Configuring done
+[2.450s] -- Generating done
+[2.464s] -- Build files have been written to: /home/vboxuser/workspaces/build/micro_ros_msgs
+[2.477s] Invoked command in '/home/vboxuser/workspaces/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/install/publisher:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake /home/vboxuser/workspaces/src/uros/micro_ros_msgs -DUAGENT_BUILD_EXECUTABLE=OFF -DUAGENT_P2P_PROFILE=OFF --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX=/home/vboxuser/workspaces/install/micro_ros_msgs
+[2.478s] Invoking command in '/home/vboxuser/workspaces/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/install/publisher:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/build/micro_ros_msgs -- -j5 -l5
+[2.564s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.580s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.598s] [  4%] Built target ament_cmake_python_copy_micro_ros_msgs
+[2.912s] running egg_info
+[2.912s] creating micro_ros_msgs.egg-info
+[2.912s] writing micro_ros_msgs.egg-info/PKG-INFO
+[2.913s] writing dependency_links to micro_ros_msgs.egg-info/dependency_links.txt
+[2.913s] writing top-level names to micro_ros_msgs.egg-info/top_level.txt
+[2.913s] writing manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'
+[2.916s] reading manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'
+[2.916s] writing manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'
+[2.951s] [  4%] Built target ament_cmake_python_build_micro_ros_msgs_egg
+[3.053s] [  4%] Built target micro_ros_msgs__cpp
+[3.074s] [  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.077s] [  8%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.080s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.114s] [ 12%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/graph__functions.c.o[0m
+[3.114s] [ 14%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/node__functions.c.o[0m
+[3.324s] [ 17%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/entity__functions.c.o[0m
+[3.407s] [ 19%] [32m[1mLinking C shared library libmicro_ros_msgs__rosidl_generator_c.so[0m
+[3.469s] [ 19%] Built target micro_ros_msgs__rosidl_generator_c
+[3.498s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.501s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.521s] [ 25%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/graph__type_support.cpp.o[0m
+[3.547s] [ 27%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/graph__type_support.cpp.o[0m
+[3.639s] [ 29%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/graph__type_support.cpp.o[0m
+[4.116s] [ 31%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/graph__type_support.c.o[0m
+[4.140s] [ 34%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/graph__type_support_c.cpp.o[0m
+[4.220s] [ 36%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/node__type_support.c.o[0m
+[4.322s] [ 38%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/entity__type_support.c.o[0m
+[4.373s] [ 40%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/node__type_support.cpp.o[0m
+[4.399s] [ 42%] [32m[1mLinking C shared library libmicro_ros_msgs__rosidl_typesupport_introspection_c.so[0m
+[4.457s] [ 42%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c
+[4.477s] [ 44%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/entity__type_support.cpp.o[0m
+[4.617s] [ 46%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/node__type_support.cpp.o[0m
+[4.681s] [ 48%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/node__type_support.cpp.o[0m
+[4.728s] [ 51%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/node__type_support_c.cpp.o[0m
+[4.821s] [ 53%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/entity__type_support_c.cpp.o[0m
+[4.845s] [ 55%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_cpp.so[0m
+[4.921s] [ 55%] Built target micro_ros_msgs__rosidl_typesupport_cpp
+[4.935s] [ 57%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/entity__type_support.cpp.o[0m
+[5.190s] [ 59%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/entity__type_support.cpp.o[0m
+[5.197s] [ 61%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[5.287s] [ 63%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[5.424s] [ 63%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c
+[5.452s] [ 65%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.523s] [ 68%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/node__type_support.cpp.o[0m
+[5.524s] [ 70%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/entity__type_support.cpp.o[0m
+[5.525s] [ 72%] [32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/graph__type_support.cpp.o[0m
+[5.572s] [ 72%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_cpp
+[5.586s] [ 74%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_c.so[0m
+[5.645s] [ 74%] Built target micro_ros_msgs__rosidl_typesupport_c
+[5.681s] [ 76%] [32m[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[5.786s] [ 76%] Built target micro_ros_msgs__rosidl_typesupport_introspection_cpp
+[5.830s] [ 76%] Built target micro_ros_msgs
+[5.870s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.440s] [ 78%] Built target micro_ros_msgs__py
+[6.482s] [ 82%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_graph_s.c.o[0m
+[6.482s] [ 85%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_entity_s.c.o[0m
+[6.482s] [ 85%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_node_s.c.o[0m
+[6.878s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/libmicro_ros_msgs__rosidl_generator_py.so[0m
+[6.946s] [ 87%] Built target micro_ros_msgs__rosidl_generator_py
+[7.003s] [ 89%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.003s] [ 91%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.004s] [ 93%] [32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[7.131s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.131s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.134s] [100%] [32m[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.190s] [100%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c__pyext
+[7.190s] [100%] Built target micro_ros_msgs__rosidl_typesupport_c__pyext
+[7.192s] [100%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext
+[7.217s] Invoked command in '/home/vboxuser/workspaces/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/install/publisher:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/build/micro_ros_msgs -- -j5 -l5
+[7.233s] Invoking command in '/home/vboxuser/workspaces/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/install/publisher:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/build/micro_ros_msgs
+[7.252s] -- Install configuration: ""
+[7.255s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/ament_index/resource_index/rosidl_interfaces/micro_ros_msgs
+[7.255s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[7.256s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[7.256s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.h
+[7.256s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[7.256s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__functions.h
+[7.257s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__functions.h
+[7.257s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__functions.c
+[7.258s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.h
+[7.266s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__functions.h
+[7.266s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.h
+[7.266s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.h
+[7.266s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.h
+[7.267s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.h
+[7.267s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.h
+[7.267s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__functions.c
+[7.267s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__functions.c
+[7.274s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.h
+[7.274s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_generator_c__visibility_control.h
+[7.274s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.h
+[7.274s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.sh
+[7.275s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.dsv
+[7.275s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so
+[7.275s] -- Set runtime path of "/home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so" to ""
+[7.275s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[7.275s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[7.275s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[7.275s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_c.h
+[7.275s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_c.h
+[7.275s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_c.h
+[7.276s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[7.276s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so
+[7.277s] -- Set runtime path of "/home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[7.277s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[7.277s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[7.277s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[7.278s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_c.h
+[7.278s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.c
+[7.278s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.c
+[7.278s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.c
+[7.279s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_c.h
+[7.279s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_c.h
+[7.279s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[7.280s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so
+[7.280s] -- Set runtime path of "/home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so" to ""
+[7.280s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so
+[7.281s] -- Set runtime path of "/home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so" to ""
+[7.281s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[7.281s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[7.281s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[7.281s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.hpp
+[7.281s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.hpp
+[7.282s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.hpp
+[7.282s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__traits.hpp
+[7.282s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__traits.hpp
+[7.283s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__traits.hpp
+[7.283s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__builder.hpp
+[7.284s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__builder.hpp
+[7.284s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.hpp
+[7.284s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__builder.hpp
+[7.284s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.hpp
+[7.285s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.hpp
+[7.285s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.hpp
+[7.285s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[7.286s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.hpp
+[7.286s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.hpp
+[7.287s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[7.287s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[7.287s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[7.287s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_cpp.hpp
+[7.287s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/dds_fastrtps
+[7.288s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_cpp.hpp
+[7.288s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_cpp.hpp
+[7.288s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[7.288s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so
+[7.289s] -- Set runtime path of "/home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[7.289s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs
+[7.289s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg
+[7.289s] -- Up-to-date: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail
+[7.290s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_cpp.hpp
+[7.290s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_cpp.hpp
+[7.290s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_cpp.hpp
+[7.290s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.cpp
+[7.291s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.cpp
+[7.291s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.cpp
+[7.292s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so
+[7.293s] -- Set runtime path of "/home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[7.293s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so
+[7.293s] -- Set runtime path of "/home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so" to ""
+[7.293s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.sh
+[7.294s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.dsv
+[7.294s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info
+[7.294s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info/top_level.txt
+[7.294s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info/SOURCES.txt
+[7.295s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info/PKG-INFO
+[7.295s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs-3.0.1-py3.10.egg-info/dependency_links.txt
+[7.295s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs
+[7.295s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c
+[7.296s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[7.296s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg
+[7.296s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity.py
+[7.297s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph.py
+[7.297s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity_s.c
+[7.297s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/__init__.py
+[7.297s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node_s.c
+[7.298s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph_s.c
+[7.298s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node.py
+[7.299s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/libmicro_ros_msgs__rosidl_generator_py.so
+[7.299s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.300s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.300s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/__init__.py
+[7.300s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.301s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[7.351s] Listing '/home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs'...
+[7.351s] Compiling '/home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/__init__.py'...
+[7.351s] Listing '/home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg'...
+[7.351s] Compiling '/home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/__init__.py'...
+[7.351s] Compiling '/home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_entity.py'...
+[7.351s] Compiling '/home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_graph.py'...
+[7.351s] Compiling '/home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/msg/_node.py'...
+[7.356s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[7.357s] -- Set runtime path of "/home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.358s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[7.358s] -- Set runtime path of "/home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.359s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[7.360s] -- Set runtime path of "/home/vboxuser/workspaces/install/micro_ros_msgs/local/lib/python3.10/dist-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[7.360s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so
+[7.361s] -- Set runtime path of "/home/vboxuser/workspaces/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so" to ""
+[7.361s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.idl
+[7.361s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.idl
+[7.361s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.idl
+[7.362s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.msg
+[7.362s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.msg
+[7.362s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.msg
+[7.363s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/ament_index/resource_index/package_run_dependencies/micro_ros_msgs
+[7.363s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/ament_index/resource_index/parent_prefix_path/micro_ros_msgs
+[7.364s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.sh
+[7.364s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.dsv
+[7.364s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.sh
+[7.365s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.dsv
+[7.365s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.bash
+[7.365s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.sh
+[7.366s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.zsh
+[7.366s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.dsv
+[7.366s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv
+[7.367s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/ament_index/resource_index/packages/micro_ros_msgs
+[7.367s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cExport.cmake
+[7.368s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cExport-noconfig.cmake
+[7.368s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[7.368s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[7.369s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport.cmake
+[7.369s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.370s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport.cmake
+[7.370s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[7.370s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cppExport.cmake
+[7.371s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[7.371s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[7.371s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[7.372s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.372s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport.cmake
+[7.372s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[7.372s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_pyExport.cmake
+[7.373s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_pyExport-noconfig.cmake
+[7.374s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake-extras.cmake
+[7.374s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.374s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[7.375s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[7.375s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.375s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.376s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.376s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig.cmake
+[7.376s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig-version.cmake
+[7.377s] -- Installing: /home/vboxuser/workspaces/install/micro_ros_msgs/share/micro_ros_msgs/package.xml
+[7.382s] Invoked command in '/home/vboxuser/workspaces/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/install/publisher:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/build/micro_ros_msgs

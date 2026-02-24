@@ -1,0 +1,790 @@
+[1.550s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.550s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=5, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x70c619d5bd00>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x70c619ea8cd0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x70c619ea8cd0>>, mixin_verb=('build',))
+[4.699s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.699s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.699s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.700s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.700s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.700s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.700s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/vboxuser/workspaces/ros2_py_ws'
+[4.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.700s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.713s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.714s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.714s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.715s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.715s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.715s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.715s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.715s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.715s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.715s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.715s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.716s] Level 1:colcon.colcon_core.package_identification:_identify(micro_ros_setup) by extensions ['ignore', 'ignore_ament_install']
+[4.716s] Level 1:colcon.colcon_core.package_identification:_identify(micro_ros_setup) by extension 'ignore'
+[4.716s] Level 1:colcon.colcon_core.package_identification:_identify(micro_ros_setup) by extension 'ignore_ament_install'
+[4.716s] Level 1:colcon.colcon_core.package_identification:_identify(micro_ros_setup) by extensions ['colcon_pkg']
+[4.716s] Level 1:colcon.colcon_core.package_identification:_identify(micro_ros_setup) by extension 'colcon_pkg'
+[4.716s] Level 1:colcon.colcon_core.package_identification:_identify(micro_ros_setup) by extensions ['colcon_meta']
+[4.716s] Level 1:colcon.colcon_core.package_identification:_identify(micro_ros_setup) by extension 'colcon_meta'
+[4.716s] Level 1:colcon.colcon_core.package_identification:_identify(micro_ros_setup) by extensions ['ros']
+[4.716s] Level 1:colcon.colcon_core.package_identification:_identify(micro_ros_setup) by extension 'ros'
+[4.718s] DEBUG:colcon.colcon_core.package_identification:Package 'micro_ros_setup' with type 'ros.ament_cmake' and name 'micro_ros_setup'
+[4.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[4.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[4.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[4.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[4.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[4.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[4.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[4.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[4.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[4.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[4.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[4.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[4.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[4.719s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[4.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extensions ['ignore', 'ignore_ament_install']
+[4.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extension 'ignore'
+[4.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extension 'ignore_ament_install'
+[4.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extensions ['colcon_pkg']
+[4.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extension 'colcon_pkg'
+[4.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extensions ['colcon_meta']
+[4.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extension 'colcon_meta'
+[4.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extensions ['ros']
+[4.720s] Level 1:colcon.colcon_core.package_identification:_identify(src/publisher) by extension 'ros'
+[4.744s] DEBUG:colcon.colcon_core.package_identification:Package 'src/publisher' with type 'ros.ament_python' and name 'publisher'
+[4.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry) by extensions ['ignore', 'ignore_ament_install']
+[4.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry) by extension 'ignore'
+[4.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry) by extension 'ignore_ament_install'
+[4.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry) by extensions ['colcon_pkg']
+[4.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry) by extension 'colcon_pkg'
+[4.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry) by extensions ['colcon_meta']
+[4.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry) by extension 'colcon_meta'
+[4.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry) by extensions ['ros']
+[4.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry) by extension 'ros'
+[4.745s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sabry' with type 'ros.ament_cmake' and name 'sabry'
+[4.745s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_controller) by extensions ['ignore', 'ignore_ament_install']
+[4.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_controller) by extension 'ignore'
+[4.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_controller) by extension 'ignore_ament_install'
+[4.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_controller) by extensions ['colcon_pkg']
+[4.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_controller) by extension 'colcon_pkg'
+[4.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_controller) by extensions ['colcon_meta']
+[4.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_controller) by extension 'colcon_meta'
+[4.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_controller) by extensions ['ros']
+[4.746s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_controller) by extension 'ros'
+[4.747s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sabry_controller' with type 'ros.ament_cmake' and name 'sabry_controller'
+[4.747s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_hardware) by extensions ['ignore', 'ignore_ament_install']
+[4.747s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_hardware) by extension 'ignore'
+[4.747s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_hardware) by extension 'ignore_ament_install'
+[4.747s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_hardware) by extensions ['colcon_pkg']
+[4.748s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_hardware) by extension 'colcon_pkg'
+[4.748s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_hardware) by extensions ['colcon_meta']
+[4.748s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_hardware) by extension 'colcon_meta'
+[4.748s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_hardware) by extensions ['ros']
+[4.748s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_hardware) by extension 'ros'
+[4.748s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sabry_hardware' with type 'ros.ament_cmake' and name 'sabry_hardware'
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_moveit) by extensions ['ignore', 'ignore_ament_install']
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_moveit) by extension 'ignore'
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_moveit) by extension 'ignore_ament_install'
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_moveit) by extensions ['colcon_pkg']
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_moveit) by extension 'colcon_pkg'
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_moveit) by extensions ['colcon_meta']
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_moveit) by extension 'colcon_meta'
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_moveit) by extensions ['ros']
+[4.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabry_moveit) by extension 'ros'
+[4.750s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sabry_moveit' with type 'ros.ament_cmake' and name 'sabry_moveit'
+[4.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabrydemo_moveit) by extensions ['ignore', 'ignore_ament_install']
+[4.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabrydemo_moveit) by extension 'ignore'
+[4.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabrydemo_moveit) by extension 'ignore_ament_install'
+[4.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabrydemo_moveit) by extensions ['colcon_pkg']
+[4.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabrydemo_moveit) by extension 'colcon_pkg'
+[4.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabrydemo_moveit) by extensions ['colcon_meta']
+[4.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabrydemo_moveit) by extension 'colcon_meta'
+[4.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabrydemo_moveit) by extensions ['ros']
+[4.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/sabrydemo_moveit) by extension 'ros'
+[4.751s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sabrydemo_moveit' with type 'ros.ament_cmake' and name 'sabrydemo_moveit'
+[4.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/udemy_ros2_pkg) by extensions ['ignore', 'ignore_ament_install']
+[4.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/udemy_ros2_pkg) by extension 'ignore'
+[4.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/udemy_ros2_pkg) by extension 'ignore_ament_install'
+[4.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/udemy_ros2_pkg) by extensions ['colcon_pkg']
+[4.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/udemy_ros2_pkg) by extension 'colcon_pkg'
+[4.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/udemy_ros2_pkg) by extensions ['colcon_meta']
+[4.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/udemy_ros2_pkg) by extension 'colcon_meta'
+[4.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/udemy_ros2_pkg) by extensions ['ros']
+[4.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/udemy_ros2_pkg) by extension 'ros'
+[4.753s] DEBUG:colcon.colcon_core.package_identification:Package 'src/udemy_ros2_pkg' with type 'ros.ament_cmake' and name 'udemy_ros2_pkg'
+[4.753s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['ignore', 'ignore_ament_install']
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'ignore'
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'ignore_ament_install'
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['colcon_pkg']
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'colcon_pkg'
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['colcon_meta']
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'colcon_meta'
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['ros']
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'ros'
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['cmake', 'python']
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'cmake'
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'python'
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extensions ['python_setup_py']
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros) by extension 'python_setup_py'
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['ignore', 'ignore_ament_install']
+[4.754s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'ignore'
+[4.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'ignore_ament_install'
+[4.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['colcon_pkg']
+[4.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'colcon_pkg'
+[4.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['colcon_meta']
+[4.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'colcon_meta'
+[4.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['ros']
+[4.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'ros'
+[4.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['cmake', 'python']
+[4.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'cmake'
+[4.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'python'
+[4.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extensions ['python_setup_py']
+[4.755s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent) by extension 'python_setup_py'
+[4.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extensions ['ignore', 'ignore_ament_install']
+[4.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'ignore'
+[4.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'ignore_ament_install'
+[4.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extensions ['colcon_pkg']
+[4.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'colcon_pkg'
+[4.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extensions ['colcon_meta']
+[4.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'colcon_meta'
+[4.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extensions ['ros']
+[4.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/micro_ros_agent) by extension 'ros'
+[4.757s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uros/micro-ROS-Agent/micro_ros_agent' with type 'ros.ament_cmake' and name 'micro_ros_agent'
+[4.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['ignore', 'ignore_ament_install']
+[4.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'ignore'
+[4.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'ignore_ament_install'
+[4.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['colcon_pkg']
+[4.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'colcon_pkg'
+[4.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['colcon_meta']
+[4.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'colcon_meta'
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['ros']
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'ros'
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['cmake', 'python']
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'cmake'
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'python'
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extensions ['python_setup_py']
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap) by extension 'python_setup_py'
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['ignore', 'ignore_ament_install']
+[4.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'ignore'
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'ignore_ament_install'
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['colcon_pkg']
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'colcon_pkg'
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['colcon_meta']
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'colcon_meta'
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['ros']
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'ros'
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['cmake', 'python']
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'cmake'
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'python'
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extensions ['python_setup_py']
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/hooks) by extension 'python_setup_py'
+[4.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['ignore', 'ignore_ament_install']
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'ignore'
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'ignore_ament_install'
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['colcon_pkg']
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'colcon_pkg'
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['colcon_meta']
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'colcon_meta'
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['ros']
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'ros'
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['cmake', 'python']
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'cmake'
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'python'
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extensions ['python_setup_py']
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro-ROS-Agent/snap/local) by extension 'python_setup_py'
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extensions ['ignore', 'ignore_ament_install']
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'ignore'
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'ignore_ament_install'
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extensions ['colcon_pkg']
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'colcon_pkg'
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extensions ['colcon_meta']
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'colcon_meta'
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extensions ['ros']
+[4.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/uros/micro_ros_msgs) by extension 'ros'
+[4.761s] DEBUG:colcon.colcon_core.package_identification:Package 'src/uros/micro_ros_msgs' with type 'ros.ament_cmake' and name 'micro_ros_msgs'
+[4.761s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.761s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.761s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.761s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.761s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.781s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.781s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.783s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/vboxuser/workspaces/ros2_py_ws/install
+[4.784s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/vboxuser/ws_moveit2/install
+[4.786s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 408 installed packages in /opt/ros/humble
+[4.789s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[5.375s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_args' from command line to 'None'
+[5.375s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_target' from command line to 'None'
+[5.375s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.375s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[5.375s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[5.376s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[5.376s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[5.376s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[5.376s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.376s] DEBUG:colcon.colcon_core.verb:Building package 'micro_ros_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs', 'merge_install': False, 'path': '/home/vboxuser/workspaces/ros2_py_ws/src/uros/micro_ros_msgs', 'symlink_install': False, 'test_result_base': None}
+[5.377s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_args' from command line to 'None'
+[5.377s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_target' from command line to 'None'
+[5.377s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.377s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_clean_cache' from command line to 'False'
+[5.377s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_clean_first' from command line to 'False'
+[5.377s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'cmake_force_configure' from command line to 'False'
+[5.377s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'ament_cmake_args' from command line to 'None'
+[5.377s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'catkin_cmake_args' from command line to 'None'
+[5.377s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_setup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.377s] DEBUG:colcon.colcon_core.verb:Building package 'micro_ros_setup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_setup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup', 'merge_install': False, 'path': '/home/vboxuser/workspaces/ros2_py_ws/micro_ros_setup', 'symlink_install': False, 'test_result_base': None}
+[5.378s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'cmake_args' from command line to 'None'
+[5.378s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'cmake_target' from command line to 'None'
+[5.378s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.378s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'cmake_clean_cache' from command line to 'False'
+[5.378s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'cmake_clean_first' from command line to 'False'
+[5.378s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'cmake_force_configure' from command line to 'False'
+[5.379s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'ament_cmake_args' from command line to 'None'
+[5.379s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'catkin_cmake_args' from command line to 'None'
+[5.379s] Level 5:colcon.colcon_core.verb:set package 'publisher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.379s] DEBUG:colcon.colcon_core.verb:Building package 'publisher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vboxuser/workspaces/ros2_py_ws/build/publisher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vboxuser/workspaces/ros2_py_ws/install/publisher', 'merge_install': False, 'path': '/home/vboxuser/workspaces/ros2_py_ws/src/publisher', 'symlink_install': False, 'test_result_base': None}
+[5.379s] Level 5:colcon.colcon_core.verb:set package 'sabry' build argument 'cmake_args' from command line to 'None'
+[5.379s] Level 5:colcon.colcon_core.verb:set package 'sabry' build argument 'cmake_target' from command line to 'None'
+[5.379s] Level 5:colcon.colcon_core.verb:set package 'sabry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.379s] Level 5:colcon.colcon_core.verb:set package 'sabry' build argument 'cmake_clean_cache' from command line to 'False'
+[5.379s] Level 5:colcon.colcon_core.verb:set package 'sabry' build argument 'cmake_clean_first' from command line to 'False'
+[5.379s] Level 5:colcon.colcon_core.verb:set package 'sabry' build argument 'cmake_force_configure' from command line to 'False'
+[5.379s] Level 5:colcon.colcon_core.verb:set package 'sabry' build argument 'ament_cmake_args' from command line to 'None'
+[5.379s] Level 5:colcon.colcon_core.verb:set package 'sabry' build argument 'catkin_cmake_args' from command line to 'None'
+[5.379s] Level 5:colcon.colcon_core.verb:set package 'sabry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.379s] DEBUG:colcon.colcon_core.verb:Building package 'sabry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vboxuser/workspaces/ros2_py_ws/build/sabry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vboxuser/workspaces/ros2_py_ws/install/sabry', 'merge_install': False, 'path': '/home/vboxuser/workspaces/ros2_py_ws/src/sabry', 'symlink_install': False, 'test_result_base': None}
+[5.380s] Level 5:colcon.colcon_core.verb:set package 'sabry_controller' build argument 'cmake_args' from command line to 'None'
+[5.380s] Level 5:colcon.colcon_core.verb:set package 'sabry_controller' build argument 'cmake_target' from command line to 'None'
+[5.380s] Level 5:colcon.colcon_core.verb:set package 'sabry_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.380s] Level 5:colcon.colcon_core.verb:set package 'sabry_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[5.380s] Level 5:colcon.colcon_core.verb:set package 'sabry_controller' build argument 'cmake_clean_first' from command line to 'False'
+[5.380s] Level 5:colcon.colcon_core.verb:set package 'sabry_controller' build argument 'cmake_force_configure' from command line to 'False'
+[5.380s] Level 5:colcon.colcon_core.verb:set package 'sabry_controller' build argument 'ament_cmake_args' from command line to 'None'
+[5.380s] Level 5:colcon.colcon_core.verb:set package 'sabry_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[5.380s] Level 5:colcon.colcon_core.verb:set package 'sabry_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.380s] DEBUG:colcon.colcon_core.verb:Building package 'sabry_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller', 'merge_install': False, 'path': '/home/vboxuser/workspaces/ros2_py_ws/src/sabry_controller', 'symlink_install': False, 'test_result_base': None}
+[5.381s] Level 5:colcon.colcon_core.verb:set package 'sabry_hardware' build argument 'cmake_args' from command line to 'None'
+[5.381s] Level 5:colcon.colcon_core.verb:set package 'sabry_hardware' build argument 'cmake_target' from command line to 'None'
+[5.381s] Level 5:colcon.colcon_core.verb:set package 'sabry_hardware' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.381s] Level 5:colcon.colcon_core.verb:set package 'sabry_hardware' build argument 'cmake_clean_cache' from command line to 'False'
+[5.381s] Level 5:colcon.colcon_core.verb:set package 'sabry_hardware' build argument 'cmake_clean_first' from command line to 'False'
+[5.381s] Level 5:colcon.colcon_core.verb:set package 'sabry_hardware' build argument 'cmake_force_configure' from command line to 'False'
+[5.381s] Level 5:colcon.colcon_core.verb:set package 'sabry_hardware' build argument 'ament_cmake_args' from command line to 'None'
+[5.381s] Level 5:colcon.colcon_core.verb:set package 'sabry_hardware' build argument 'catkin_cmake_args' from command line to 'None'
+[5.381s] Level 5:colcon.colcon_core.verb:set package 'sabry_hardware' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.381s] DEBUG:colcon.colcon_core.verb:Building package 'sabry_hardware' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware', 'merge_install': False, 'path': '/home/vboxuser/workspaces/ros2_py_ws/src/sabry_hardware', 'symlink_install': False, 'test_result_base': None}
+[5.381s] Level 5:colcon.colcon_core.verb:set package 'udemy_ros2_pkg' build argument 'cmake_args' from command line to 'None'
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'udemy_ros2_pkg' build argument 'cmake_target' from command line to 'None'
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'udemy_ros2_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'udemy_ros2_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'udemy_ros2_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'udemy_ros2_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'udemy_ros2_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'udemy_ros2_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'udemy_ros2_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.382s] DEBUG:colcon.colcon_core.verb:Building package 'udemy_ros2_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg', 'merge_install': False, 'path': '/home/vboxuser/workspaces/ros2_py_ws/src/udemy_ros2_pkg', 'symlink_install': False, 'test_result_base': None}
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_args' from command line to 'None'
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_target' from command line to 'None'
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_clean_cache' from command line to 'False'
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_clean_first' from command line to 'False'
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'cmake_force_configure' from command line to 'False'
+[5.382s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'ament_cmake_args' from command line to 'None'
+[5.383s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'catkin_cmake_args' from command line to 'None'
+[5.383s] Level 5:colcon.colcon_core.verb:set package 'micro_ros_agent' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.383s] DEBUG:colcon.colcon_core.verb:Building package 'micro_ros_agent' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_agent', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent', 'merge_install': False, 'path': '/home/vboxuser/workspaces/ros2_py_ws/src/uros/micro-ROS-Agent/micro_ros_agent', 'symlink_install': False, 'test_result_base': None}
+[5.383s] Level 5:colcon.colcon_core.verb:set package 'sabry_moveit' build argument 'cmake_args' from command line to 'None'
+[5.383s] Level 5:colcon.colcon_core.verb:set package 'sabry_moveit' build argument 'cmake_target' from command line to 'None'
+[5.383s] Level 5:colcon.colcon_core.verb:set package 'sabry_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.383s] Level 5:colcon.colcon_core.verb:set package 'sabry_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[5.383s] Level 5:colcon.colcon_core.verb:set package 'sabry_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[5.383s] Level 5:colcon.colcon_core.verb:set package 'sabry_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[5.383s] Level 5:colcon.colcon_core.verb:set package 'sabry_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[5.384s] Level 5:colcon.colcon_core.verb:set package 'sabry_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[5.384s] Level 5:colcon.colcon_core.verb:set package 'sabry_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.384s] DEBUG:colcon.colcon_core.verb:Building package 'sabry_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit', 'merge_install': False, 'path': '/home/vboxuser/workspaces/ros2_py_ws/src/sabry_moveit', 'symlink_install': False, 'test_result_base': None}
+[5.384s] Level 5:colcon.colcon_core.verb:set package 'sabrydemo_moveit' build argument 'cmake_args' from command line to 'None'
+[5.384s] Level 5:colcon.colcon_core.verb:set package 'sabrydemo_moveit' build argument 'cmake_target' from command line to 'None'
+[5.384s] Level 5:colcon.colcon_core.verb:set package 'sabrydemo_moveit' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[5.384s] Level 5:colcon.colcon_core.verb:set package 'sabrydemo_moveit' build argument 'cmake_clean_cache' from command line to 'False'
+[5.384s] Level 5:colcon.colcon_core.verb:set package 'sabrydemo_moveit' build argument 'cmake_clean_first' from command line to 'False'
+[5.384s] Level 5:colcon.colcon_core.verb:set package 'sabrydemo_moveit' build argument 'cmake_force_configure' from command line to 'False'
+[5.384s] Level 5:colcon.colcon_core.verb:set package 'sabrydemo_moveit' build argument 'ament_cmake_args' from command line to 'None'
+[5.384s] Level 5:colcon.colcon_core.verb:set package 'sabrydemo_moveit' build argument 'catkin_cmake_args' from command line to 'None'
+[5.384s] Level 5:colcon.colcon_core.verb:set package 'sabrydemo_moveit' build argument 'catkin_skip_building_tests' from command line to 'False'
+[5.384s] DEBUG:colcon.colcon_core.verb:Building package 'sabrydemo_moveit' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/vboxuser/workspaces/ros2_py_ws/build/sabrydemo_moveit', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit', 'merge_install': False, 'path': '/home/vboxuser/workspaces/ros2_py_ws/src/sabrydemo_moveit', 'symlink_install': False, 'test_result_base': None}
+[5.384s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[5.387s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[5.387s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vboxuser/workspaces/ros2_py_ws/src/sabry' with build type 'ament_cmake'
+[5.388s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vboxuser/workspaces/ros2_py_ws/src/sabry'
+[5.392s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.393s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.393s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.399s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vboxuser/workspaces/ros2_py_ws/src/uros/micro_ros_msgs' with build type 'ament_cmake'
+[5.400s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vboxuser/workspaces/ros2_py_ws/src/uros/micro_ros_msgs'
+[5.400s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.400s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.409s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vboxuser/workspaces/ros2_py_ws/micro_ros_setup' with build type 'ament_cmake'
+[5.409s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vboxuser/workspaces/ros2_py_ws/micro_ros_setup'
+[5.409s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.409s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.421s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/vboxuser/workspaces/ros2_py_ws/src/publisher' with build type 'ament_python'
+[5.422s] Level 1:colcon.colcon_core.shell:create_environment_hook('publisher', 'ament_prefix_path')
+[5.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/publisher/hook/ament_prefix_path.ps1'
+[5.424s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/publisher/hook/ament_prefix_path.dsv'
+[5.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/publisher/hook/ament_prefix_path.sh'
+[5.426s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.426s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.432s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vboxuser/workspaces/ros2_py_ws/src/sabry_controller' with build type 'ament_cmake'
+[5.432s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vboxuser/workspaces/ros2_py_ws/src/sabry_controller'
+[5.433s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.433s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/sabry -- -j5 -l5
+[5.460s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_msgs -- -j5 -l5
+[5.857s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/vboxuser/workspaces/ros2_py_ws/src/publisher'
+[5.857s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.857s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.937s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller -- -j5 -l5
+[5.938s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_setup -- -j5 -l5
+[5.947s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/sabry -- -j5 -l5
+[5.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/sabry
+[6.001s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sabry)
+[6.002s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/sabry
+[6.004s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry' for CMake module files
+[6.004s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry' for CMake config files
+[6.005s] Level 1:colcon.colcon_core.shell:create_environment_hook('sabry', 'cmake_prefix_path')
+[6.005s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/hook/cmake_prefix_path.ps1'
+[6.006s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/hook/cmake_prefix_path.dsv'
+[6.006s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/hook/cmake_prefix_path.sh'
+[6.007s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/bin'
+[6.007s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/lib/pkgconfig/sabry.pc'
+[6.007s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/lib/python3.10/site-packages'
+[6.008s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/bin'
+[6.008s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/package.ps1'
+[6.009s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/package.dsv'
+[6.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/package.sh'
+[6.010s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/package.bash'
+[6.012s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/package.zsh'
+[6.012s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/colcon-core/packages/sabry)
+[6.013s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sabry)
+[6.013s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry' for CMake module files
+[6.014s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry' for CMake config files
+[6.014s] Level 1:colcon.colcon_core.shell:create_environment_hook('sabry', 'cmake_prefix_path')
+[6.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/hook/cmake_prefix_path.ps1'
+[6.016s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/hook/cmake_prefix_path.dsv'
+[6.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/hook/cmake_prefix_path.sh'
+[6.018s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/bin'
+[6.018s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/lib/pkgconfig/sabry.pc'
+[6.018s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/lib/python3.10/site-packages'
+[6.019s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/bin'
+[6.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/package.ps1'
+[6.020s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/package.dsv'
+[6.021s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/package.sh'
+[6.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/package.bash'
+[6.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/sabry/package.zsh'
+[6.023s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/sabry/share/colcon-core/packages/sabry)
+[6.024s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vboxuser/workspaces/ros2_py_ws/src/sabry_hardware' with build type 'ament_cmake'
+[6.024s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vboxuser/workspaces/ros2_py_ws/src/sabry_hardware'
+[6.025s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.025s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware -- -j5 -l5
+[6.101s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_setup -- -j5 -l5
+[6.103s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_setup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_setup
+[6.132s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_setup)
+[6.133s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup' for CMake module files
+[6.134s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup' for CMake config files
+[6.134s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_setup', 'cmake_prefix_path')
+[6.134s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.ps1'
+[6.135s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.dsv'
+[6.135s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.sh'
+[6.136s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/lib'
+[6.136s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/bin'
+[6.136s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/lib/pkgconfig/micro_ros_setup.pc'
+[6.137s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/lib/python3.10/site-packages'
+[6.137s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/bin'
+[6.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/package.ps1'
+[6.137s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/package.dsv'
+[6.140s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_setup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_setup
+[6.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/package.sh'
+[6.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/package.bash'
+[6.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/package.zsh'
+[6.143s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/colcon-core/packages/micro_ros_setup)
+[6.144s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_setup)
+[6.144s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup' for CMake module files
+[6.144s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup' for CMake config files
+[6.144s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_setup', 'cmake_prefix_path')
+[6.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.ps1'
+[6.192s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.dsv'
+[6.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/hook/cmake_prefix_path.sh'
+[6.194s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/lib'
+[6.194s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/bin'
+[6.194s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/lib/pkgconfig/micro_ros_setup.pc'
+[6.298s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/lib/python3.10/site-packages'
+[6.298s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/bin'
+[6.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/package.ps1'
+[6.299s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/package.dsv'
+[6.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/package.sh'
+[6.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/package.bash'
+[6.301s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/micro_ros_setup/package.zsh'
+[6.301s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup/share/colcon-core/packages/micro_ros_setup)
+[6.302s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vboxuser/workspaces/ros2_py_ws/src/udemy_ros2_pkg' with build type 'ament_cmake'
+[6.302s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vboxuser/workspaces/ros2_py_ws/src/udemy_ros2_pkg'
+[6.302s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.302s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.503s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller -- -j5 -l5
+[6.504s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller
+[6.526s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/src/publisher': PYTHONPATH=/home/vboxuser/workspaces/ros2_py_ws/build/publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/publisher build --build-base /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build install --record /home/vboxuser/workspaces/ros2_py_ws/build/publisher/install.log --single-version-externally-managed install_data
+[6.577s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sabry_controller)
+[6.578s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller' for CMake module files
+[6.578s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller' for CMake config files
+[6.578s] Level 1:colcon.colcon_core.shell:create_environment_hook('sabry_controller', 'cmake_prefix_path')
+[6.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/hook/cmake_prefix_path.ps1'
+[6.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg -- -j5 -l5
+[6.585s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/sabry_controller
+[6.586s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/hook/cmake_prefix_path.dsv'
+[6.589s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/hook/cmake_prefix_path.sh'
+[6.599s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/bin'
+[6.599s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/lib/pkgconfig/sabry_controller.pc'
+[6.600s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/lib/python3.10/site-packages'
+[6.600s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/bin'
+[6.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/package.ps1'
+[6.603s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/package.dsv'
+[6.610s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/package.sh'
+[6.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/package.bash'
+[6.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/package.zsh'
+[6.632s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/colcon-core/packages/sabry_controller)
+[6.634s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sabry_controller)
+[6.634s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller' for CMake module files
+[6.635s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller' for CMake config files
+[6.635s] Level 1:colcon.colcon_core.shell:create_environment_hook('sabry_controller', 'cmake_prefix_path')
+[6.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/hook/cmake_prefix_path.ps1'
+[6.637s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/hook/cmake_prefix_path.dsv'
+[6.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/hook/cmake_prefix_path.sh'
+[6.647s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/bin'
+[6.647s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/lib/pkgconfig/sabry_controller.pc'
+[6.648s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/lib/python3.10/site-packages'
+[6.648s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/bin'
+[6.649s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/package.ps1'
+[6.655s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/package.dsv'
+[6.657s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/package.sh'
+[6.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/package.bash'
+[6.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/sabry_controller/package.zsh'
+[6.669s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller/share/colcon-core/packages/sabry_controller)
+[6.670s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vboxuser/workspaces/ros2_py_ws/src/sabry_moveit' with build type 'ament_cmake'
+[6.671s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vboxuser/workspaces/ros2_py_ws/src/sabry_moveit'
+[6.671s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.671s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit -- -j5 -l5
+[7.132s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit' returned '0': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit -- -j5 -l5
+[7.133s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit
+[7.184s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sabry_moveit)
+[7.185s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit' for CMake module files
+[7.186s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit' returned '0': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit
+[7.192s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit' for CMake config files
+[7.192s] Level 1:colcon.colcon_core.shell:create_environment_hook('sabry_moveit', 'cmake_prefix_path')
+[7.192s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/hook/cmake_prefix_path.ps1'
+[7.193s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/hook/cmake_prefix_path.dsv'
+[7.193s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/hook/cmake_prefix_path.sh'
+[7.194s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/bin'
+[7.194s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/lib/pkgconfig/sabry_moveit.pc'
+[7.194s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/lib/python3.10/site-packages'
+[7.194s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/bin'
+[7.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/package.ps1'
+[7.195s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/package.dsv'
+[7.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/package.sh'
+[7.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/package.bash'
+[7.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/package.zsh'
+[7.197s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/colcon-core/packages/sabry_moveit)
+[7.213s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sabry_moveit)
+[7.225s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit' for CMake module files
+[7.225s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit' for CMake config files
+[7.237s] Level 1:colcon.colcon_core.shell:create_environment_hook('sabry_moveit', 'cmake_prefix_path')
+[7.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/hook/cmake_prefix_path.ps1'
+[7.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/hook/cmake_prefix_path.dsv'
+[7.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/hook/cmake_prefix_path.sh'
+[7.239s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/bin'
+[7.239s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/lib/pkgconfig/sabry_moveit.pc'
+[7.239s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/lib/python3.10/site-packages'
+[7.239s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/bin'
+[7.240s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/package.ps1'
+[7.240s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/package.dsv'
+[7.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/package.sh'
+[7.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/package.bash'
+[7.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/package.zsh'
+[7.262s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/colcon-core/packages/sabry_moveit)
+[7.284s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vboxuser/workspaces/ros2_py_ws/src/sabrydemo_moveit' with build type 'ament_cmake'
+[7.285s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vboxuser/workspaces/ros2_py_ws/src/sabrydemo_moveit'
+[7.285s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.285s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabrydemo_moveit': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/sabrydemo_moveit -- -j5 -l5
+[7.365s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/publisher' for CMake module files
+[7.365s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/publisher' for CMake config files
+[7.366s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib'
+[7.366s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/bin'
+[7.366s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/pkgconfig/publisher.pc'
+[7.367s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages'
+[7.367s] Level 1:colcon.colcon_core.shell:create_environment_hook('publisher', 'pythonpath')
+[7.367s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/publisher/hook/pythonpath.ps1'
+[7.368s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/publisher/hook/pythonpath.dsv'
+[7.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/publisher/hook/pythonpath.sh'
+[7.369s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/bin'
+[7.369s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(publisher)
+[7.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/publisher/package.ps1'
+[7.370s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/publisher/package.dsv'
+[7.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/publisher/package.sh'
+[7.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/publisher/package.bash'
+[7.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/publisher/package.zsh'
+[7.390s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/publisher/share/colcon-core/packages/publisher)
+[7.391s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/src/publisher' returned '0': PYTHONPATH=/home/vboxuser/workspaces/ros2_py_ws/build/publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/publisher build --build-base /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build install --record /home/vboxuser/workspaces/ros2_py_ws/build/publisher/install.log --single-version-externally-managed install_data
+[7.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabrydemo_moveit' returned '0': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/sabrydemo_moveit -- -j5 -l5
+[7.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabrydemo_moveit': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/sabrydemo_moveit
+[7.459s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_msgs -- -j5 -l5
+[7.460s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_msgs
+[7.488s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sabrydemo_moveit)
+[7.489s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit' for CMake module files
+[7.489s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabrydemo_moveit' returned '0': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/sabrydemo_moveit
+[7.490s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit' for CMake config files
+[7.490s] Level 1:colcon.colcon_core.shell:create_environment_hook('sabrydemo_moveit', 'cmake_prefix_path')
+[7.490s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/hook/cmake_prefix_path.ps1'
+[7.491s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/hook/cmake_prefix_path.dsv'
+[7.493s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/hook/cmake_prefix_path.sh'
+[7.501s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/bin'
+[7.502s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/lib/pkgconfig/sabrydemo_moveit.pc'
+[7.502s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/lib/python3.10/site-packages'
+[7.502s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/bin'
+[7.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/package.ps1'
+[7.503s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/package.dsv'
+[7.508s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/package.sh'
+[7.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/package.bash'
+[7.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/package.zsh'
+[7.510s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/colcon-core/packages/sabrydemo_moveit)
+[7.523s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sabrydemo_moveit)
+[7.524s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit' for CMake module files
+[7.524s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit' for CMake config files
+[7.524s] Level 1:colcon.colcon_core.shell:create_environment_hook('sabrydemo_moveit', 'cmake_prefix_path')
+[7.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/hook/cmake_prefix_path.ps1'
+[7.525s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/hook/cmake_prefix_path.dsv'
+[7.526s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/hook/cmake_prefix_path.sh'
+[7.528s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/bin'
+[7.528s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/lib/pkgconfig/sabrydemo_moveit.pc'
+[7.528s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/lib/python3.10/site-packages'
+[7.528s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/bin'
+[7.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/package.ps1'
+[7.530s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/package.dsv'
+[7.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/package.sh'
+[7.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/package.bash'
+[7.532s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/sabrydemo_moveit/package.zsh'
+[7.534s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit/share/colcon-core/packages/sabrydemo_moveit)
+[8.995s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_msgs)
+[8.996s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs' for CMake module files
+[8.996s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs' for CMake config files
+[8.997s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'cmake_prefix_path')
+[8.997s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.ps1'
+[8.998s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.dsv'
+[8.998s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.sh'
+[9.037s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/lib'
+[9.037s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'ld_library_path_lib')
+[9.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.ps1'
+[9.038s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.dsv'
+[9.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.sh'
+[9.039s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/bin'
+[9.039s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/lib/pkgconfig/micro_ros_msgs.pc'
+[9.039s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/lib/python3.10/site-packages'
+[9.040s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/bin'
+[9.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.ps1'
+[9.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_msgs
+[9.207s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv'
+[9.208s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.sh'
+[9.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.bash'
+[9.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.zsh'
+[9.309s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/colcon-core/packages/micro_ros_msgs)
+[9.310s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_msgs)
+[9.310s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs' for CMake module files
+[9.311s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs' for CMake config files
+[9.311s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'cmake_prefix_path')
+[9.311s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.ps1'
+[9.312s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.dsv'
+[9.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/cmake_prefix_path.sh'
+[9.313s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/lib'
+[9.313s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_msgs', 'ld_library_path_lib')
+[9.313s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.ps1'
+[9.314s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.dsv'
+[9.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/hook/ld_library_path_lib.sh'
+[9.315s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/bin'
+[9.315s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/lib/pkgconfig/micro_ros_msgs.pc'
+[9.315s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/lib/python3.10/site-packages'
+[9.315s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/bin'
+[9.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.ps1'
+[9.316s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv'
+[9.316s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.sh'
+[9.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.bash'
+[9.317s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.zsh'
+[9.390s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/share/colcon-core/packages/micro_ros_msgs)
+[9.391s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/vboxuser/workspaces/ros2_py_ws/src/uros/micro-ROS-Agent/micro_ros_agent' with build type 'ament_cmake'
+[9.391s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/vboxuser/workspaces/ros2_py_ws/src/uros/micro-ROS-Agent/micro_ros_agent'
+[9.391s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.391s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.654s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_agent': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/lib:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/lib:/home/vboxuser/ws_moveit2/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_agent -- -j5 -l5
+[11.450s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_agent' returned '0': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/lib:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/lib:/home/vboxuser/ws_moveit2/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_agent -- -j5 -l5
+[11.451s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_agent': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/lib:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/lib:/home/vboxuser/ws_moveit2/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_agent
+[11.492s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_agent)
+[11.493s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_agent' returned '0': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble LD_LIBRARY_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/lib:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/lib:/home/vboxuser/ws_moveit2/install/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/micro_ros_agent
+[11.493s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent' for CMake module files
+[11.494s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent' for CMake config files
+[11.494s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'cmake_prefix_path')
+[11.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.ps1'
+[11.496s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.dsv'
+[11.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.sh'
+[11.499s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/lib'
+[11.499s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'ld_library_path_lib')
+[11.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.ps1'
+[11.501s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.dsv'
+[11.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.sh'
+[11.503s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/bin'
+[11.503s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/lib/pkgconfig/micro_ros_agent.pc'
+[11.504s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/lib/python3.10/site-packages'
+[11.504s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/bin'
+[11.505s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/package.ps1'
+[11.506s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/package.dsv'
+[11.508s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/package.sh'
+[11.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/package.bash'
+[11.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/package.zsh'
+[11.512s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/colcon-core/packages/micro_ros_agent)
+[11.515s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(micro_ros_agent)
+[11.515s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent' for CMake module files
+[11.518s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent' for CMake config files
+[11.521s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'cmake_prefix_path')
+[11.521s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.ps1'
+[11.529s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.dsv'
+[11.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/hook/cmake_prefix_path.sh'
+[11.535s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/lib'
+[11.536s] Level 1:colcon.colcon_core.shell:create_environment_hook('micro_ros_agent', 'ld_library_path_lib')
+[11.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.ps1'
+[11.538s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.dsv'
+[11.540s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/hook/ld_library_path_lib.sh'
+[11.541s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/bin'
+[11.542s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/lib/pkgconfig/micro_ros_agent.pc'
+[11.542s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/lib/python3.10/site-packages'
+[11.542s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/bin'
+[11.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/package.ps1'
+[11.545s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/package.dsv'
+[11.547s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/package.sh'
+[11.549s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/package.bash'
+[11.551s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/micro_ros_agent/package.zsh'
+[11.552s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/share/colcon-core/packages/micro_ros_agent)
+[11.665s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware -- -j5 -l5
+[11.665s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware
+[11.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg -- -j5 -l5
+[11.694s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg
+[11.830s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(udemy_ros2_pkg)
+[11.830s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg' for CMake module files
+[11.831s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg' for CMake config files
+[11.831s] Level 1:colcon.colcon_core.shell:create_environment_hook('udemy_ros2_pkg', 'cmake_prefix_path')
+[11.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/hook/cmake_prefix_path.ps1'
+[11.837s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/hook/cmake_prefix_path.dsv'
+[11.835s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg
+[11.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/hook/cmake_prefix_path.sh'
+[11.851s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/lib'
+[11.851s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/bin'
+[11.851s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/lib/pkgconfig/udemy_ros2_pkg.pc'
+[11.851s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/lib/python3.10/site-packages'
+[11.852s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/bin'
+[11.852s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/package.ps1'
+[11.853s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/package.dsv'
+[11.854s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/package.sh'
+[11.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/package.bash'
+[11.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/package.zsh'
+[11.856s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/colcon-core/packages/udemy_ros2_pkg)
+[11.857s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(udemy_ros2_pkg)
+[11.858s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg' for CMake module files
+[11.858s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg' for CMake config files
+[11.858s] Level 1:colcon.colcon_core.shell:create_environment_hook('udemy_ros2_pkg', 'cmake_prefix_path')
+[11.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/hook/cmake_prefix_path.ps1'
+[11.860s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/hook/cmake_prefix_path.dsv'
+[11.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/hook/cmake_prefix_path.sh'
+[11.862s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/lib'
+[11.862s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/bin'
+[11.862s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/lib/pkgconfig/udemy_ros2_pkg.pc'
+[11.862s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/lib/python3.10/site-packages'
+[11.863s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/bin'
+[11.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/package.ps1'
+[11.863s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/package.dsv'
+[11.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/package.sh'
+[11.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/package.bash'
+[11.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/package.zsh'
+[11.869s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/colcon-core/packages/udemy_ros2_pkg)
+[11.950s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sabry_hardware)
+[11.950s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware' for CMake module files
+[11.951s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware' for CMake config files
+[11.951s] Level 1:colcon.colcon_core.shell:create_environment_hook('sabry_hardware', 'cmake_prefix_path')
+[11.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/hook/cmake_prefix_path.ps1'
+[11.954s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware
+[11.955s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/hook/cmake_prefix_path.dsv'
+[11.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/hook/cmake_prefix_path.sh'
+[11.957s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib'
+[11.957s] Level 1:colcon.colcon_core.shell:create_environment_hook('sabry_hardware', 'ld_library_path_lib')
+[11.957s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/hook/ld_library_path_lib.ps1'
+[11.958s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/hook/ld_library_path_lib.dsv'
+[11.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/hook/ld_library_path_lib.sh'
+[11.960s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/bin'
+[11.960s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/pkgconfig/sabry_hardware.pc'
+[11.961s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/python3.10/site-packages'
+[11.961s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/bin'
+[11.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/package.ps1'
+[11.962s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/package.dsv'
+[11.963s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/package.sh'
+[11.964s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/package.bash'
+[11.965s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/package.zsh'
+[11.966s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/colcon-core/packages/sabry_hardware)
+[11.967s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sabry_hardware)
+[11.967s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware' for CMake module files
+[11.968s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware' for CMake config files
+[11.968s] Level 1:colcon.colcon_core.shell:create_environment_hook('sabry_hardware', 'cmake_prefix_path')
+[11.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/hook/cmake_prefix_path.ps1'
+[11.969s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/hook/cmake_prefix_path.dsv'
+[11.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/hook/cmake_prefix_path.sh'
+[11.971s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib'
+[11.971s] Level 1:colcon.colcon_core.shell:create_environment_hook('sabry_hardware', 'ld_library_path_lib')
+[11.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/hook/ld_library_path_lib.ps1'
+[11.974s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/hook/ld_library_path_lib.dsv'
+[11.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/hook/ld_library_path_lib.sh'
+[11.979s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/bin'
+[11.979s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/pkgconfig/sabry_hardware.pc'
+[11.979s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/python3.10/site-packages'
+[11.979s] Level 1:colcon.colcon_core.environment:checking '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/bin'
+[11.981s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/package.ps1'
+[11.982s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/package.dsv'
+[11.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/package.sh'
+[11.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/package.bash'
+[11.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/package.zsh'
+[11.987s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/colcon-core/packages/sabry_hardware)
+[11.988s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[11.991s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[11.991s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[11.991s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.017s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.017s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.017s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.071s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.072s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vboxuser/workspaces/ros2_py_ws/install/local_setup.ps1'
+[12.073s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vboxuser/workspaces/ros2_py_ws/install/_local_setup_util_ps1.py'
+[12.075s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vboxuser/workspaces/ros2_py_ws/install/setup.ps1'
+[12.078s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vboxuser/workspaces/ros2_py_ws/install/local_setup.sh'
+[12.080s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/vboxuser/workspaces/ros2_py_ws/install/_local_setup_util_sh.py'
+[12.081s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vboxuser/workspaces/ros2_py_ws/install/setup.sh'
+[12.084s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vboxuser/workspaces/ros2_py_ws/install/local_setup.bash'
+[12.084s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vboxuser/workspaces/ros2_py_ws/install/setup.bash'
+[12.086s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/vboxuser/workspaces/ros2_py_ws/install/local_setup.zsh'
+[12.087s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/vboxuser/workspaces/ros2_py_ws/install/setup.zsh'

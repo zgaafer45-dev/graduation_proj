@@ -1,0 +1,1 @@
+Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake /home/vboxuser/workspaces/ros2_py_ws/src/sabry -DCMAKE_INSTALL_PREFIX=/home/vboxuser/workspaces/ros2_py_ws/install/sabry

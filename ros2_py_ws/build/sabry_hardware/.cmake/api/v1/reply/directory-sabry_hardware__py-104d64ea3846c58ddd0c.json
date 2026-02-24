@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "sabry_hardware__py",
+		"source" : "/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware/sabry_hardware__py"
+	}
+}

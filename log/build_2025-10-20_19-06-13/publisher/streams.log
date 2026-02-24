@@ -1,0 +1,37 @@
+[1.010s] Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/src/publisher': PYTHONPATH=/home/vboxuser/workspaces/build/publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vboxuser/workspaces/install/publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/publisher build --build-base /home/vboxuser/workspaces/build/publisher/build install --record /home/vboxuser/workspaces/build/publisher/install.log --single-version-externally-managed install_data
+[1.306s] running egg_info
+[1.308s] creating ../../../build/publisher/publisher.egg-info
+[1.334s] writing ../../../build/publisher/publisher.egg-info/PKG-INFO
+[1.334s] writing dependency_links to ../../../build/publisher/publisher.egg-info/dependency_links.txt
+[1.334s] writing entry points to ../../../build/publisher/publisher.egg-info/entry_points.txt
+[1.334s] writing requirements to ../../../build/publisher/publisher.egg-info/requires.txt
+[1.334s] writing top-level names to ../../../build/publisher/publisher.egg-info/top_level.txt
+[1.334s] writing manifest file '../../../build/publisher/publisher.egg-info/SOURCES.txt'
+[1.336s] reading manifest file '../../../build/publisher/publisher.egg-info/SOURCES.txt'
+[1.336s] writing manifest file '../../../build/publisher/publisher.egg-info/SOURCES.txt'
+[1.336s] running build
+[1.336s] running build_py
+[1.336s] creating /home/vboxuser/workspaces/build/publisher/build
+[1.336s] creating /home/vboxuser/workspaces/build/publisher/build/lib
+[1.336s] creating /home/vboxuser/workspaces/build/publisher/build/lib/publisher
+[1.336s] copying publisher/pub.py -> /home/vboxuser/workspaces/build/publisher/build/lib/publisher
+[1.336s] copying publisher/__init__.py -> /home/vboxuser/workspaces/build/publisher/build/lib/publisher
+[1.336s] running install
+[1.337s] running install_lib
+[1.337s] creating /home/vboxuser/workspaces/install/publisher/lib/python3.10/site-packages/publisher
+[1.337s] copying /home/vboxuser/workspaces/build/publisher/build/lib/publisher/pub.py -> /home/vboxuser/workspaces/install/publisher/lib/python3.10/site-packages/publisher
+[1.337s] copying /home/vboxuser/workspaces/build/publisher/build/lib/publisher/__init__.py -> /home/vboxuser/workspaces/install/publisher/lib/python3.10/site-packages/publisher
+[1.337s] byte-compiling /home/vboxuser/workspaces/install/publisher/lib/python3.10/site-packages/publisher/pub.py to pub.cpython-310.pyc
+[1.337s] byte-compiling /home/vboxuser/workspaces/install/publisher/lib/python3.10/site-packages/publisher/__init__.py to __init__.cpython-310.pyc
+[1.337s] running install_data
+[1.337s] creating /home/vboxuser/workspaces/install/publisher/share/ament_index
+[1.337s] creating /home/vboxuser/workspaces/install/publisher/share/ament_index/resource_index
+[1.337s] creating /home/vboxuser/workspaces/install/publisher/share/ament_index/resource_index/packages
+[1.337s] copying resource/publisher -> /home/vboxuser/workspaces/install/publisher/share/ament_index/resource_index/packages
+[1.337s] copying package.xml -> /home/vboxuser/workspaces/install/publisher/share/publisher
+[1.337s] running install_egg_info
+[1.338s] Copying ../../../build/publisher/publisher.egg-info to /home/vboxuser/workspaces/install/publisher/lib/python3.10/site-packages/publisher-0.0.0-py3.10.egg-info
+[1.340s] running install_scripts
+[1.366s] Installing simple_publisher script to /home/vboxuser/workspaces/install/publisher/lib/publisher
+[1.367s] writing list of installed files to '/home/vboxuser/workspaces/build/publisher/install.log'
+[1.401s] Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/src/publisher' returned '0': PYTHONPATH=/home/vboxuser/workspaces/build/publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vboxuser/workspaces/install/publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/publisher build --build-base /home/vboxuser/workspaces/build/publisher/build install --record /home/vboxuser/workspaces/build/publisher/install.log --single-version-externally-managed install_data

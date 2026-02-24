@@ -1,0 +1,42 @@
+[0.082s] Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg -- -j5 -l5
+[0.340s] Built target ament_cmake_python_copy_scripts
+[1.120s] running egg_info
+[1.120s] writing scripts.egg-info/PKG-INFO
+[1.136s] writing dependency_links to scripts.egg-info/dependency_links.txt
+[1.136s] writing top-level names to scripts.egg-info/top_level.txt
+[1.137s] reading manifest file 'scripts.egg-info/SOURCES.txt'
+[1.137s] writing manifest file 'scripts.egg-info/SOURCES.txt'
+[1.231s] Built target ament_cmake_python_build_scripts_egg
+[1.269s] Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg -- -j5 -l5
+[1.277s] Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg
+[1.308s] -- Install configuration: ""
+[1.308s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/environment/pythonpath.sh
+[1.308s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/environment/pythonpath.dsv
+[1.308s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/local/lib/python3.10/dist-packages/scripts-0.0.0-py3.10.egg-info
+[1.308s] -- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/local/lib/python3.10/dist-packages/scripts-0.0.0-py3.10.egg-info/top_level.txt
+[1.308s] -- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/local/lib/python3.10/dist-packages/scripts-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.309s] -- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/local/lib/python3.10/dist-packages/scripts-0.0.0-py3.10.egg-info/PKG-INFO
+[1.309s] -- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/local/lib/python3.10/dist-packages/scripts-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.309s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/local/lib/python3.10/dist-packages/scripts
+[1.309s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/local/lib/python3.10/dist-packages/scripts/ok.py
+[1.309s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/local/lib/python3.10/dist-packages/scripts/__init__.py
+[1.374s] Listing '/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/local/lib/python3.10/dist-packages/scripts'...
+[1.381s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/lib/udemy_ros2_pkg/ok.py
+[1.381s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg//launch
+[1.382s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg//launch/rpm_node.launch.py
+[1.382s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/ament_index/resource_index/package_run_dependencies/udemy_ros2_pkg
+[1.386s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/ament_index/resource_index/parent_prefix_path/udemy_ros2_pkg
+[1.386s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/environment/ament_prefix_path.sh
+[1.387s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/environment/ament_prefix_path.dsv
+[1.387s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/environment/path.sh
+[1.387s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/environment/path.dsv
+[1.387s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/local_setup.bash
+[1.387s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/local_setup.sh
+[1.387s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/local_setup.zsh
+[1.387s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/local_setup.dsv
+[1.387s] -- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/package.dsv
+[1.387s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/ament_index/resource_index/packages/udemy_ros2_pkg
+[1.387s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/cmake/udemy_ros2_pkgConfig.cmake
+[1.387s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/cmake/udemy_ros2_pkgConfig-version.cmake
+[1.387s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/share/udemy_ros2_pkg/package.xml
+[1.411s] Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/udemy_ros2_pkg

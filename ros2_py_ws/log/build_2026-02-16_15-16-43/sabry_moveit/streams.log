@@ -1,0 +1,43 @@
+[0.562s] Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit -- -j5 -l5
+[1.038s] Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit' returned '0': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --build /home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit -- -j5 -l5
+[1.067s] Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit
+[1.156s] -- Install configuration: ""
+[1.157s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/ament_index/resource_index/package_run_dependencies/sabry_moveit
+[1.157s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/ament_index/resource_index/parent_prefix_path/sabry_moveit
+[1.157s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/environment/ament_prefix_path.sh
+[1.157s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/environment/ament_prefix_path.dsv
+[1.157s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/environment/path.sh
+[1.162s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/environment/path.dsv
+[1.163s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/local_setup.bash
+[1.163s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/local_setup.sh
+[1.174s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/local_setup.zsh
+[1.174s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/local_setup.dsv
+[1.174s] -- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/package.dsv
+[1.174s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/ament_index/resource_index/packages/sabry_moveit
+[1.174s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/cmake/sabry_moveitConfig.cmake
+[1.174s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/cmake/sabry_moveitConfig-version.cmake
+[1.174s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/package.xml
+[1.174s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/launch
+[1.174s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/launch/rsp.launch.py
+[1.174s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/launch/moveit_rviz.launch.py
+[1.179s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/launch/warehouse_db.launch.py
+[1.179s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/launch/moveit.launch.py
+[1.179s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/launch/spawn_controllers.launch.py
+[1.179s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/launch/demo.launch.py
+[1.179s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/launch/move_group.launch.py
+[1.179s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/launch/setup_assistant.launch.py
+[1.179s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/launch/static_virtual_joint_tfs.launch.py
+[1.180s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/config
+[1.180s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/config/initial_positions.yaml
+[1.180s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/config/sabry.urdf.xacro
+[1.180s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/config/sabry.ros2_control.xacro
+[1.180s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/config/joint_limits.yaml
+[1.180s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/config/moveit.rviz
+[1.180s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/config/pilz_cartesian_limits.yaml
+[1.180s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/config/sabry.srdf
+[1.180s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/config/ros2_controllers.yaml
+[1.180s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/config/moveit_controllers.yaml
+[1.180s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/config/sensors_3d.yaml
+[1.182s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/config/kinematics.yaml
+[1.183s] -- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit/share/sabry_moveit/.setup_assistant
+[1.356s] Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit' returned '0': CMAKE_PREFIX_PATH=/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabrydemo_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble /usr/bin/cmake --install /home/vboxuser/workspaces/ros2_py_ws/build/sabry_moveit

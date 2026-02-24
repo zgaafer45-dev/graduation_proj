@@ -1,0 +1,455 @@
+[0.000000] (-) TimerEvent: {}
+[0.000161] (-) JobUnselected: {'identifier': 'gazebo_ros_link_attacher'}
+[0.000186] (-) JobUnselected: {'identifier': 'micro_ros_agent'}
+[0.000203] (-) JobUnselected: {'identifier': 'micro_ros_msgs'}
+[0.000217] (-) JobUnselected: {'identifier': 'micro_ros_setup'}
+[0.000229] (-) JobUnselected: {'identifier': 'publisher'}
+[0.000241] (-) JobUnselected: {'identifier': 'sabry'}
+[0.000253] (-) JobUnselected: {'identifier': 'sabry_controller'}
+[0.000264] (-) JobUnselected: {'identifier': 'sabry_moveit'}
+[0.000276] (-) JobUnselected: {'identifier': 'sabrydemo_moveit'}
+[0.000286] (-) JobUnselected: {'identifier': 'udemy_ros2_pkg'}
+[0.000300] (sabry_hardware) JobQueued: {'identifier': 'sabry_hardware', 'dependencies': OrderedDict()}
+[0.000317] (sabry_hardware) JobStarted: {'identifier': 'sabry_hardware'}
+[0.032278] (sabry_hardware) JobProgress: {'identifier': 'sabry_hardware', 'progress': 'cmake'}
+[0.041526] (sabry_hardware) Command: {'cmd': ['/usr/bin/cmake', '/home/vboxuser/workspaces/ros2_py_ws/src/sabry_hardware', '-DCMAKE_INSTALL_PREFIX=/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware'], 'cwd': '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'vboxuser'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/vboxuser/ws_moveit2/install/lib:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/lib:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vboxuser'), ('OLDPWD', '/home/vboxuser'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('SYSTEMD_EXEC_PID', '1723'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vboxuser'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vboxuser/ws_moveit2/install/bin:/opt/ros/humble/bin:/home/vboxuser/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ROS2:@/tmp/.ICE-unix/1703,unix/ROS2:/tmp/.ICE-unix/1703'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0793c877_56bf_49da_86a4_38e2b62127c2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TVVGK3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.123'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vboxuser/ws_moveit2/install/local/lib/python3.10/dist-packages:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/local/lib/python3.10/dist-packages:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages:/home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble')]), 'shell': False}
+[0.095545] (-) TimerEvent: {}
+[0.202588] (-) TimerEvent: {}
+[0.307032] (-) TimerEvent: {}
+[0.408587] (-) TimerEvent: {}
+[0.512235] (-) TimerEvent: {}
+[0.587335] (sabry_hardware) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.612784] (-) TimerEvent: {}
+[0.714749] (-) TimerEvent: {}
+[0.823337] (-) TimerEvent: {}
+[0.925723] (-) TimerEvent: {}
+[1.031835] (-) TimerEvent: {}
+[1.132848] (-) TimerEvent: {}
+[1.236753] (-) TimerEvent: {}
+[1.338875] (-) TimerEvent: {}
+[1.439295] (-) TimerEvent: {}
+[1.542138] (-) TimerEvent: {}
+[1.648031] (-) TimerEvent: {}
+[1.749199] (-) TimerEvent: {}
+[1.850206] (-) TimerEvent: {}
+[1.952021] (-) TimerEvent: {}
+[2.055356] (-) TimerEvent: {}
+[2.155991] (-) TimerEvent: {}
+[2.257183] (-) TimerEvent: {}
+[2.362816] (-) TimerEvent: {}
+[2.463584] (-) TimerEvent: {}
+[2.565642] (-) TimerEvent: {}
+[2.666725] (-) TimerEvent: {}
+[2.767302] (-) TimerEvent: {}
+[2.863117] (sabry_hardware) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.868757] (-) TimerEvent: {}
+[2.891919] (sabry_hardware) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.971025] (-) TimerEvent: {}
+[3.073025] (-) TimerEvent: {}
+[3.177828] (-) TimerEvent: {}
+[3.229241] (sabry_hardware) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.244455] (sabry_hardware) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.278141] (-) TimerEvent: {}
+[3.308788] (sabry_hardware) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.329873] (sabry_hardware) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.334080] (sabry_hardware) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.381821] (-) TimerEvent: {}
+[3.485835] (-) TimerEvent: {}
+[3.586870] (-) TimerEvent: {}
+[3.683590] (sabry_hardware) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.691687] (-) TimerEvent: {}
+[3.703758] (sabry_hardware) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.704071] (sabry_hardware) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.704136] (sabry_hardware) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.733355] (sabry_hardware) StdoutLine: {'line': b'-- Found ament_cmake_python: 1.3.11 (/opt/ros/humble/share/ament_cmake_python/cmake)\n'}
+[3.770682] (sabry_hardware) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.793974] (-) TimerEvent: {}
+[3.894882] (-) TimerEvent: {}
+[3.995509] (-) TimerEvent: {}
+[4.097308] (-) TimerEvent: {}
+[4.186149] (sabry_hardware) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.200793] (-) TimerEvent: {}
+[4.306666] (-) TimerEvent: {}
+[4.410465] (-) TimerEvent: {}
+[4.470838] (sabry_hardware) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[4.473678] (sabry_hardware) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.511433] (-) TimerEvent: {}
+[4.528475] (sabry_hardware) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.628805] (-) TimerEvent: {}
+[4.660997] (sabry_hardware) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.726278] (-) TimerEvent: {}
+[4.732169] (sabry_hardware) StdoutLine: {'line': b'-- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[4.827261] (-) TimerEvent: {}
+[4.930147] (-) TimerEvent: {}
+[5.030971] (-) TimerEvent: {}
+[5.131788] (-) TimerEvent: {}
+[5.233563] (-) TimerEvent: {}
+[5.336784] (-) TimerEvent: {}
+[5.354938] (sabry_hardware) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[5.437924] (-) TimerEvent: {}
+[5.540189] (-) TimerEvent: {}
+[5.643471] (-) TimerEvent: {}
+[5.746479] (-) TimerEvent: {}
+[5.851341] (-) TimerEvent: {}
+[5.852529] (sabry_hardware) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.952100] (-) TimerEvent: {}
+[6.052726] (-) TimerEvent: {}
+[6.156416] (-) TimerEvent: {}
+[6.258951] (-) TimerEvent: {}
+[6.359802] (-) TimerEvent: {}
+[6.464951] (-) TimerEvent: {}
+[6.509109] (sabry_hardware) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.565381] (-) TimerEvent: {}
+[6.583635] (sabry_hardware) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[6.590132] (sabry_hardware) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[6.667618] (-) TimerEvent: {}
+[6.671235] (sabry_hardware) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[6.671406] (sabry_hardware) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.671470] (sabry_hardware) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[6.671527] (sabry_hardware) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[6.745242] (sabry_hardware) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[6.769762] (-) TimerEvent: {}
+[6.857435] (sabry_hardware) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.871665] (-) TimerEvent: {}
+[6.943709] (sabry_hardware) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[6.944096] (sabry_hardware) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.944345] (sabry_hardware) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[6.944822] (sabry_hardware) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.958079] (sabry_hardware) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.973522] (-) TimerEvent: {}
+[7.054336] (sabry_hardware) StdoutLine: {'line': b'-- Generating done\n'}
+[7.075452] (-) TimerEvent: {}
+[7.081544] (sabry_hardware) StdoutLine: {'line': b'-- Build files have been written to: /home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware\n'}
+[7.113845] (sabry_hardware) CommandEnded: {'returncode': 0}
+[7.115512] (sabry_hardware) JobProgress: {'identifier': 'sabry_hardware', 'progress': 'build'}
+[7.115548] (sabry_hardware) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware', '--', '-j5', '-l5'], 'cwd': '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'vboxuser'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/vboxuser/ws_moveit2/install/lib:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/lib:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vboxuser'), ('OLDPWD', '/home/vboxuser'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('SYSTEMD_EXEC_PID', '1723'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vboxuser'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vboxuser/ws_moveit2/install/bin:/opt/ros/humble/bin:/home/vboxuser/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ROS2:@/tmp/.ICE-unix/1703,unix/ROS2:/tmp/.ICE-unix/1703'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0793c877_56bf_49da_86a4_38e2b62127c2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TVVGK3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.123'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vboxuser/ws_moveit2/install/local/lib/python3.10/dist-packages:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/local/lib/python3.10/dist-packages:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages:/home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble')]), 'shell': False}
+[7.176604] (-) TimerEvent: {}
+[7.289310] (-) TimerEvent: {}
+[7.289868] (sabry_hardware) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[7.330006] (sabry_hardware) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[7.394693] (sabry_hardware) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_sabry_hardware\n'}
+[7.395280] (-) TimerEvent: {}
+[7.408106] (sabry_hardware) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_scripts\n'}
+[7.506274] (-) TimerEvent: {}
+[7.622466] (-) TimerEvent: {}
+[7.723310] (-) TimerEvent: {}
+[7.832431] (-) TimerEvent: {}
+[7.938059] (-) TimerEvent: {}
+[7.973687] (sabry_hardware) StdoutLine: {'line': b'running egg_info\n'}
+[7.973957] (sabry_hardware) StdoutLine: {'line': b'creating sabry_hardware.egg-info\n'}
+[7.974379] (sabry_hardware) StdoutLine: {'line': b'writing sabry_hardware.egg-info/PKG-INFO\n'}
+[7.974777] (sabry_hardware) StdoutLine: {'line': b'writing dependency_links to sabry_hardware.egg-info/dependency_links.txt\n'}
+[7.975211] (sabry_hardware) StdoutLine: {'line': b'writing top-level names to sabry_hardware.egg-info/top_level.txt\n'}
+[7.975655] (sabry_hardware) StdoutLine: {'line': b"writing manifest file 'sabry_hardware.egg-info/SOURCES.txt'\n"}
+[7.980740] (sabry_hardware) StdoutLine: {'line': b"reading manifest file 'sabry_hardware.egg-info/SOURCES.txt'\n"}
+[7.982847] (sabry_hardware) StdoutLine: {'line': b"writing manifest file 'sabry_hardware.egg-info/SOURCES.txt'\n"}
+[8.038474] (-) TimerEvent: {}
+[8.115310] (sabry_hardware) StdoutLine: {'line': b'running egg_info\n'}
+[8.117101] (sabry_hardware) StdoutLine: {'line': b'creating scripts.egg-info\n'}
+[8.117988] (sabry_hardware) StdoutLine: {'line': b'writing scripts.egg-info/PKG-INFO\n'}
+[8.118621] (sabry_hardware) StdoutLine: {'line': b'writing dependency_links to scripts.egg-info/dependency_links.txt\n'}
+[8.120038] (sabry_hardware) StdoutLine: {'line': b'writing top-level names to scripts.egg-info/top_level.txt\n'}
+[8.120137] (sabry_hardware) StdoutLine: {'line': b"writing manifest file 'scripts.egg-info/SOURCES.txt'\n"}
+[8.122066] (sabry_hardware) StdoutLine: {'line': b"reading manifest file 'scripts.egg-info/SOURCES.txt'\n"}
+[8.127362] (sabry_hardware) StdoutLine: {'line': b"writing manifest file 'scripts.egg-info/SOURCES.txt'\n"}
+[8.135335] (sabry_hardware) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_sabry_hardware_egg\n'}
+[8.145668] (-) TimerEvent: {}
+[8.255404] (sabry_hardware) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_scripts_egg\n'}
+[8.255719] (-) TimerEvent: {}
+[8.260393] (sabry_hardware) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/sabry_hardware__rosidl_generator_c.dir/rosidl_generator_c/sabry_hardware/srv/detail/linear_motor__functions.c.o\x1b[0m\n'}
+[8.271209] (sabry_hardware) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/sabry_hardware__rosidl_generator_c.dir/rosidl_generator_c/sabry_hardware/srv/detail/change_tool__functions.c.o\x1b[0m\n'}
+[8.311000] (sabry_hardware) StdoutLine: {'line': b'[ 10%] Built target sabry_hardware__cpp\n'}
+[8.342921] (sabry_hardware) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[8.357501] (-) TimerEvent: {}
+[8.360911] (sabry_hardware) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[8.380985] (sabry_hardware) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.460689] (-) TimerEvent: {}
+[8.481570] (sabry_hardware) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libsabry_hardware__rosidl_generator_c.so\x1b[0m\n'}
+[8.562223] (-) TimerEvent: {}
+[8.706388] (-) TimerEvent: {}
+[8.728307] (sabry_hardware) StdoutLine: {'line': b'[ 20%] Built target sabry_hardware__rosidl_generator_c\n'}
+[8.779759] (sabry_hardware) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[8.779986] (sabry_hardware) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[8.818101] (-) TimerEvent: {}
+[8.921108] (-) TimerEvent: {}
+[9.022585] (-) TimerEvent: {}
+[9.110723] (sabry_hardware) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/sabry_hardware__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sabry_hardware/srv/linear_motor__type_support.cpp.o\x1b[0m\n'}
+[9.130607] (sabry_hardware) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/sabry_hardware__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sabry_hardware/srv/detail/linear_motor__type_support.cpp.o\x1b[0m\n'}
+[9.130816] (-) TimerEvent: {}
+[9.255475] (sabry_hardware) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/sabry_hardware__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sabry_hardware/srv/detail/dds_fastrtps/linear_motor__type_support.cpp.o\x1b[0m\n'}
+[9.255720] (-) TimerEvent: {}
+[9.459143] (sabry_hardware) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/sabry_hardware__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sabry_hardware/srv/detail/linear_motor__type_support.c.o\x1b[0m\n'}
+[9.459340] (-) TimerEvent: {}
+[9.559740] (-) TimerEvent: {}
+[9.614362] (sabry_hardware) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/sabry_hardware__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sabry_hardware/srv/detail/change_tool__type_support.c.o\x1b[0m\n'}
+[9.667550] (-) TimerEvent: {}
+[9.772698] (sabry_hardware) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking C shared library libsabry_hardware__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.772894] (-) TimerEvent: {}
+[9.846193] (sabry_hardware) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/sabry_hardware__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sabry_hardware/srv/detail/linear_motor__type_support_c.cpp.o\x1b[0m\n'}
+[9.874744] (-) TimerEvent: {}
+[9.917236] (sabry_hardware) StdoutLine: {'line': b'[ 43%] Built target sabry_hardware__rosidl_typesupport_introspection_c\n'}
+[9.981969] (-) TimerEvent: {}
+[9.993994] (sabry_hardware) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.087421] (-) TimerEvent: {}
+[10.236909] (-) TimerEvent: {}
+[10.560718] (-) TimerEvent: {}
+[10.669386] (-) TimerEvent: {}
+[10.714706] (sabry_hardware) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/sabry_hardware__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sabry_hardware/srv/change_tool__type_support.cpp.o\x1b[0m\n'}
+[10.783092] (-) TimerEvent: {}
+[10.800320] (sabry_hardware) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/sabry_hardware__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sabry_hardware/srv/detail/change_tool__type_support.cpp.o\x1b[0m\n'}
+[10.802727] (sabry_hardware) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/sabry_hardware__rosidl_typesupport_c.dir/rosidl_typesupport_c/sabry_hardware/srv/linear_motor__type_support.cpp.o\x1b[0m\n'}
+[10.834839] (sabry_hardware) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/sabry_hardware__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sabry_hardware/srv/detail/change_tool__type_support_c.cpp.o\x1b[0m\n'}
+[10.853388] (sabry_hardware) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/sabry_hardware__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sabry_hardware/srv/detail/dds_fastrtps/change_tool__type_support.cpp.o\x1b[0m\n'}
+[10.887398] (-) TimerEvent: {}
+[10.971623] (sabry_hardware) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/sabry_hardware__rosidl_typesupport_c.dir/rosidl_typesupport_c/sabry_hardware/srv/change_tool__type_support.cpp.o\x1b[0m\n'}
+[11.105563] (-) TimerEvent: {}
+[11.153544] (sabry_hardware) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libsabry_hardware__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[11.207106] (-) TimerEvent: {}
+[11.274240] (sabry_hardware) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libsabry_hardware__rosidl_typesupport_c.so\x1b[0m\n'}
+[11.340648] (-) TimerEvent: {}
+[11.363945] (sabry_hardware) StdoutLine: {'line': b'[ 66%] Built target sabry_hardware__rosidl_typesupport_cpp\n'}
+[11.448191] (-) TimerEvent: {}
+[11.469232] (sabry_hardware) StdoutLine: {'line': b'[ 66%] Built target sabry_hardware__rosidl_typesupport_c\n'}
+[11.552516] (-) TimerEvent: {}
+[11.651406] (sabry_hardware) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libsabry_hardware__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[11.655469] (-) TimerEvent: {}
+[11.764982] (-) TimerEvent: {}
+[11.780770] (sabry_hardware) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libsabry_hardware__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[11.872823] (-) TimerEvent: {}
+[11.890050] (sabry_hardware) StdoutLine: {'line': b'[ 71%] Built target sabry_hardware__rosidl_typesupport_introspection_cpp\n'}
+[11.959823] (sabry_hardware) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libsabry_hardware__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[11.974542] (-) TimerEvent: {}
+[12.076179] (sabry_hardware) StdoutLine: {'line': b'[ 74%] Built target sabry_hardware__rosidl_typesupport_fastrtps_cpp\n'}
+[12.077454] (-) TimerEvent: {}
+[12.184277] (-) TimerEvent: {}
+[12.250513] (sabry_hardware) StdoutLine: {'line': b'[ 74%] Built target sabry_hardware__rosidl_typesupport_fastrtps_c\n'}
+[12.287186] (-) TimerEvent: {}
+[12.331701] (sabry_hardware) StdoutLine: {'line': b'[ 74%] Built target sabry_hardware\n'}
+[12.388028] (-) TimerEvent: {}
+[12.446421] (sabry_hardware) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.489176] (-) TimerEvent: {}
+[12.600670] (-) TimerEvent: {}
+[12.764255] (-) TimerEvent: {}
+[12.865415] (-) TimerEvent: {}
+[13.026063] (-) TimerEvent: {}
+[13.129577] (-) TimerEvent: {}
+[13.245399] (-) TimerEvent: {}
+[13.348556] (-) TimerEvent: {}
+[13.351348] (sabry_hardware) StdoutLine: {'line': b'[ 76%] Built target sabry_hardware__py\n'}
+[13.439662] (sabry_hardware) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/sabry_hardware__rosidl_generator_py.dir/rosidl_generator_py/sabry_hardware/srv/_change_tool_s.c.o\x1b[0m\n'}
+[13.439883] (sabry_hardware) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/sabry_hardware__rosidl_generator_py.dir/rosidl_generator_py/sabry_hardware/srv/_linear_motor_s.c.o\x1b[0m\n'}
+[13.449298] (-) TimerEvent: {}
+[13.550992] (-) TimerEvent: {}
+[13.881041] (-) TimerEvent: {}
+[14.013759] (-) TimerEvent: {}
+[14.118780] (-) TimerEvent: {}
+[14.198483] (sabry_hardware) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/sabry_hardware/libsabry_hardware__rosidl_generator_py.so\x1b[0m\n'}
+[14.225651] (-) TimerEvent: {}
+[14.331319] (-) TimerEvent: {}
+[14.433881] (-) TimerEvent: {}
+[14.501941] (sabry_hardware) StdoutLine: {'line': b'[ 84%] Built target sabry_hardware__rosidl_generator_py\n'}
+[14.537298] (-) TimerEvent: {}
+[14.584630] (sabry_hardware) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/sabry_hardware__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/sabry_hardware/_sabry_hardware_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.607169] (sabry_hardware) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/sabry_hardware__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/sabry_hardware/_sabry_hardware_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.619876] (sabry_hardware) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/sabry_hardware__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/sabry_hardware/_sabry_hardware_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.639922] (-) TimerEvent: {}
+[14.755934] (-) TimerEvent: {}
+[14.817425] (sabry_hardware) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/sabry_hardware/sabry_hardware_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.831935] (sabry_hardware) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/sabry_hardware/sabry_hardware_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.857746] (-) TimerEvent: {}
+[14.934252] (sabry_hardware) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/sabry_hardware/sabry_hardware_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.962829] (-) TimerEvent: {}
+[14.971259] (sabry_hardware) StdoutLine: {'line': b'[100%] Built target sabry_hardware__rosidl_typesupport_introspection_c__pyext\n'}
+[14.997606] (sabry_hardware) StdoutLine: {'line': b'[100%] Built target sabry_hardware__rosidl_typesupport_fastrtps_c__pyext\n'}
+[15.036253] (sabry_hardware) StdoutLine: {'line': b'[100%] Built target sabry_hardware__rosidl_typesupport_c__pyext\n'}
+[15.066743] (sabry_hardware) CommandEnded: {'returncode': 0}
+[15.067308] (-) TimerEvent: {}
+[15.067865] (sabry_hardware) JobProgress: {'identifier': 'sabry_hardware', 'progress': 'install'}
+[15.081691] (sabry_hardware) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware'], 'cwd': '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'vboxuser'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/vboxuser/ws_moveit2/install/lib:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent/lib:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/vboxuser'), ('OLDPWD', '/home/vboxuser'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('SYSTEMD_EXEC_PID', '1723'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'vboxuser'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'vboxuser'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/vboxuser/ws_moveit2/install/bin:/opt/ros/humble/bin:/home/vboxuser/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ROS2:@/tmp/.ICE-unix/1703,unix/ROS2:/tmp/.ICE-unix/1703'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/0793c877_56bf_49da_86a4_38e2b62127c2'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_GB.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TVVGK3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.123'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/vboxuser/ws_moveit2/install/local/lib/python3.10/dist-packages:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg/local/lib/python3.10/dist-packages:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages:/home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/vboxuser/ws_moveit2/install:/home/vboxuser/workspaces/ros2_py_ws/install/udemy_ros2_pkg:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_moveit:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_controller:/home/vboxuser/workspaces/ros2_py_ws/install/sabry:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_setup:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_agent:/home/vboxuser/workspaces/ros2_py_ws/install/micro_ros_msgs:/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware:/home/vboxuser/workspaces/ros2_py_ws/install/publisher:/opt/ros/humble')]), 'shell': False}
+[15.153534] (sabry_hardware) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.154081] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/ament_index/resource_index/rosidl_interfaces/sabry_hardware\n'}
+[15.154151] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware\n'}
+[15.154199] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/msg\n'}
+[15.154247] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/msg/rosidl_generator_c__visibility_control.h\n'}
+[15.154468] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv\n'}
+[15.154620] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail\n'}
+[15.154769] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/change_tool__functions.h\n'}
+[15.154969] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/change_tool__type_support.h\n'}
+[15.155206] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/change_tool__functions.c\n'}
+[15.155268] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/change_tool__struct.h\n'}
+[15.155317] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/linear_motor__struct.h\n'}
+[15.155364] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/linear_motor__functions.c\n'}
+[15.155408] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/linear_motor__functions.h\n'}
+[15.155451] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/linear_motor__type_support.h\n'}
+[15.155493] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/linear_motor.h\n'}
+[15.155535] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/change_tool.h\n'}
+[15.155575] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/environment/library_path.sh\n'}
+[15.155616] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/environment/library_path.dsv\n'}
+[15.155658] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_generator_c.so\n'}
+[15.155698] (sabry_hardware) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_generator_c.so" to ""\n'}
+[15.155751] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware\n'}
+[15.155794] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/msg\n'}
+[15.155834] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.155881] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv\n'}
+[15.155920] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail\n'}
+[15.155960] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/linear_motor__rosidl_typesupport_fastrtps_c.h\n'}
+[15.156005] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/change_tool__rosidl_typesupport_fastrtps_c.h\n'}
+[15.156046] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_typesupport_fastrtps_c.so\n'}
+[15.156086] (sabry_hardware) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[15.156125] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware\n'}
+[15.156164] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/msg\n'}
+[15.156202] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[15.156241] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv\n'}
+[15.156280] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail\n'}
+[15.156337] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/change_tool__rosidl_typesupport_introspection_c.h\n'}
+[15.156378] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/change_tool__type_support.c\n'}
+[15.156417] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/linear_motor__type_support.c\n'}
+[15.156455] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/linear_motor__rosidl_typesupport_introspection_c.h\n'}
+[15.156494] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_typesupport_introspection_c.so\n'}
+[15.156532] (sabry_hardware) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_typesupport_introspection_c.so" to ""\n'}
+[15.156571] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_typesupport_c.so\n'}
+[15.156609] (sabry_hardware) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_typesupport_c.so" to ""\n'}
+[15.156648] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware\n'}
+[15.156694] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/msg\n'}
+[15.156733] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[15.156773] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv\n'}
+[15.156812] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail\n'}
+[15.156901] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/change_tool__builder.hpp\n'}
+[15.156952] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/change_tool__traits.hpp\n'}
+[15.157010] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/linear_motor__traits.hpp\n'}
+[15.157053] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/linear_motor__type_support.hpp\n'}
+[15.157094] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/linear_motor__struct.hpp\n'}
+[15.157135] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/change_tool__type_support.hpp\n'}
+[15.157180] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/change_tool__struct.hpp\n'}
+[15.157222] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/linear_motor__builder.hpp\n'}
+[15.157262] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/change_tool.hpp\n'}
+[15.157308] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/linear_motor.hpp\n'}
+[15.157350] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware\n'}
+[15.157393] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/msg\n'}
+[15.157435] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[15.157476] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv\n'}
+[15.157516] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail\n'}
+[15.157556] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/dds_fastrtps\n'}
+[15.157597] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/change_tool__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.157658] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/linear_motor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.157725] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_typesupport_fastrtps_cpp.so\n'}
+[15.157798] (sabry_hardware) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[15.157846] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware\n'}
+[15.157887] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv\n'}
+[15.157926] (sabry_hardware) StdoutLine: {'line': b'-- Up-to-date: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail\n'}
+[15.157965] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/change_tool__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.158014] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/linear_motor__type_support.cpp\n'}
+[15.158055] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/change_tool__type_support.cpp\n'}
+[15.158094] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/include/sabry_hardware/sabry_hardware/srv/detail/linear_motor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.158134] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_typesupport_introspection_cpp.so\n'}
+[15.158175] (sabry_hardware) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[15.158215] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_typesupport_cpp.so\n'}
+[15.158262] (sabry_hardware) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_typesupport_cpp.so" to ""\n'}
+[15.158375] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/environment/pythonpath.sh\n'}
+[15.158429] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/environment/pythonpath.dsv\n'}
+[15.158475] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware-0.0.0-py3.10.egg-info\n'}
+[15.158528] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[15.158574] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[15.158617] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[15.158660] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[15.158713] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware\n'}
+[15.158757] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/libsabry_hardware__rosidl_generator_py.so\n'}
+[15.158799] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/srv\n'}
+[15.158880] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/srv/_linear_motor_s.c\n'}
+[15.158940] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/srv/__init__.py\n'}
+[15.158990] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/srv/_change_tool.py\n'}
+[15.159038] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/srv/_change_tool_s.c\n'}
+[15.159083] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/srv/_linear_motor.py\n'}
+[15.159127] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/sabry_hardware_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.159172] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/_sabry_hardware_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[15.159219] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/sabry_hardware_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.159263] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/__init__.py\n'}
+[15.159317] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/sabry_hardware_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.159368] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/_sabry_hardware_s.ep.rosidl_typesupport_c.c\n'}
+[15.159413] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/_sabry_hardware_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[15.191281] (sabry_hardware) StdoutLine: {'line': b"Listing '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware'...\n"}
+[15.191435] (-) TimerEvent: {}
+[15.191688] (sabry_hardware) StdoutLine: {'line': b"Compiling '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/__init__.py'...\n"}
+[15.191792] (sabry_hardware) StdoutLine: {'line': b"Listing '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/srv'...\n"}
+[15.191863] (sabry_hardware) StdoutLine: {'line': b"Compiling '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/srv/__init__.py'...\n"}
+[15.191941] (sabry_hardware) StdoutLine: {'line': b"Compiling '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/srv/_change_tool.py'...\n"}
+[15.192021] (sabry_hardware) StdoutLine: {'line': b"Compiling '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/srv/_linear_motor.py'...\n"}
+[15.196025] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/sabry_hardware_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.196556] (sabry_hardware) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/sabry_hardware_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.196842] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/sabry_hardware_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.197266] (sabry_hardware) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/sabry_hardware_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.197595] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/sabry_hardware_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.198044] (sabry_hardware) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/sabry_hardware/sabry_hardware_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.198122] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_generator_py.so\n'}
+[15.198669] (sabry_hardware) StdoutLine: {'line': b'-- Set runtime path of "/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/libsabry_hardware__rosidl_generator_py.so" to ""\n'}
+[15.198904] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/srv/LinearMotor.idl\n'}
+[15.199180] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/srv/ChangeTool.idl\n'}
+[15.199501] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/srv/LinearMotor.srv\n'}
+[15.199987] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/srv/LinearMotor_Request.msg\n'}
+[15.200239] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/srv/LinearMotor_Response.msg\n'}
+[15.200480] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/srv/ChangeTool.srv\n'}
+[15.200757] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/srv/ChangeTool_Request.msg\n'}
+[15.200980] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/srv/ChangeTool_Response.msg\n'}
+[15.201213] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts-0.0.0-py3.10.egg-info\n'}
+[15.201297] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[15.201946] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[15.202177] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[15.202590] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[15.202673] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts\n'}
+[15.202976] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts/add_two_ints_server.py\n'}
+[15.203058] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts/tool_change_manager.py\n'}
+[15.203332] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts/templete.py\n'}
+[15.203844] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts/__init__.py\n'}
+[15.204119] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts/linear_motor_node.py\n'}
+[15.238289] (sabry_hardware) StdoutLine: {'line': b"Listing '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts'...\n"}
+[15.238505] (sabry_hardware) StdoutLine: {'line': b"Compiling '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts/__init__.py'...\n"}
+[15.238568] (sabry_hardware) StdoutLine: {'line': b"Compiling '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts/add_two_ints_server.py'...\n"}
+[15.238618] (sabry_hardware) StdoutLine: {'line': b"Compiling '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts/linear_motor_node.py'...\n"}
+[15.238663] (sabry_hardware) StdoutLine: {'line': b"Compiling '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts/templete.py'...\n"}
+[15.238707] (sabry_hardware) StdoutLine: {'line': b"Compiling '/home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/local/lib/python3.10/dist-packages/scripts/tool_change_manager.py'...\n"}
+[15.242757] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/sabry_hardware/linear_motor_node.py\n'}
+[15.243815] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/sabry_hardware/add_two_ints_server.py\n'}
+[15.243899] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/lib/sabry_hardware/tool_change_manager.py\n'}
+[15.243976] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/ament_index/resource_index/package_run_dependencies/sabry_hardware\n'}
+[15.244200] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/ament_index/resource_index/parent_prefix_path/sabry_hardware\n'}
+[15.244449] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/environment/ament_prefix_path.sh\n'}
+[15.244733] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/environment/ament_prefix_path.dsv\n'}
+[15.245012] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/environment/path.sh\n'}
+[15.245243] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/environment/path.dsv\n'}
+[15.245508] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/local_setup.bash\n'}
+[15.245861] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/local_setup.sh\n'}
+[15.245937] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/local_setup.zsh\n'}
+[15.246288] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/local_setup.dsv\n'}
+[15.246536] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/package.dsv\n'}
+[15.246962] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/ament_index/resource_index/packages/sabry_hardware\n'}
+[15.247271] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/export_sabry_hardware__rosidl_generator_cExport.cmake\n'}
+[15.247542] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/export_sabry_hardware__rosidl_generator_cExport-noconfig.cmake\n'}
+[15.247864] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/export_sabry_hardware__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[15.248225] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/export_sabry_hardware__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[15.248457] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/sabry_hardware__rosidl_typesupport_introspection_cExport.cmake\n'}
+[15.248736] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/sabry_hardware__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[15.249013] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/sabry_hardware__rosidl_typesupport_cExport.cmake\n'}
+[15.249348] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/sabry_hardware__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[15.249651] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/export_sabry_hardware__rosidl_generator_cppExport.cmake\n'}
+[15.249942] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/export_sabry_hardware__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[15.250283] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/export_sabry_hardware__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[15.250558] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/sabry_hardware__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[15.250837] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/sabry_hardware__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[15.251135] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/sabry_hardware__rosidl_typesupport_cppExport.cmake\n'}
+[15.251435] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/sabry_hardware__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[15.251683] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/export_sabry_hardware__rosidl_generator_pyExport.cmake\n'}
+[15.251939] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/export_sabry_hardware__rosidl_generator_pyExport-noconfig.cmake\n'}
+[15.252202] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/rosidl_cmake-extras.cmake\n'}
+[15.252529] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[15.252956] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[15.253049] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[15.253336] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[15.253683] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[15.253759] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[15.254111] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/sabry_hardwareConfig.cmake\n'}
+[15.254466] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/cmake/sabry_hardwareConfig-version.cmake\n'}
+[15.254544] (sabry_hardware) StdoutLine: {'line': b'-- Installing: /home/vboxuser/workspaces/ros2_py_ws/install/sabry_hardware/share/sabry_hardware/package.xml\n'}
+[15.258857] (sabry_hardware) CommandEnded: {'returncode': 0}
+[15.292017] (-) TimerEvent: {}
+[15.313529] (sabry_hardware) JobEnded: {'identifier': 'sabry_hardware', 'rc': 0}
+[15.314035] (-) EventReactorShutdown: {}

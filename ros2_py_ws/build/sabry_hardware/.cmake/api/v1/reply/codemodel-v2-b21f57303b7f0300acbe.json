@@ -1,0 +1,251 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-0b9658b6daf7efafc53f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "sabry_hardware__py",
+					"jsonFile" : "directory-sabry_hardware__py-104d64ea3846c58ddd0c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware/sabry_hardware__py",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "sabry_hardware",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_sabry_hardware_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_sabry_hardware_egg-a12fcf98bdf4f3a4a412.json",
+					"name" : "ament_cmake_python_build_sabry_hardware_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_scripts_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_scripts_egg-6f38eca6148bd52ddbf8.json",
+					"name" : "ament_cmake_python_build_scripts_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_sabry_hardware::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_sabry_hardware-178427ad1d1de0afaf31.json",
+					"name" : "ament_cmake_python_copy_sabry_hardware",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_scripts::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_scripts-abf196cae85a3770f86c.json",
+					"name" : "ament_cmake_python_copy_scripts",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sabry_hardware::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sabry_hardware-e5047561e578500ed799.json",
+					"name" : "sabry_hardware",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sabry_hardware__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sabry_hardware__cpp-a3a85ef0edb154b6f259.json",
+					"name" : "sabry_hardware__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sabry_hardware__py::@7b3f9e95a25a001be5f1",
+					"jsonFile" : "target-sabry_hardware__py-8c53d8b35b2fb47bed10.json",
+					"name" : "sabry_hardware__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sabry_hardware__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sabry_hardware__rosidl_generator_c-995b14e6494be576353b.json",
+					"name" : "sabry_hardware__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sabry_hardware__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sabry_hardware__rosidl_generator_py-a13dfc822bbe4d2e8e90.json",
+					"name" : "sabry_hardware__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sabry_hardware__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sabry_hardware__rosidl_typesupport_c-eaa71a0e381ce1e0bad0.json",
+					"name" : "sabry_hardware__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sabry_hardware__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sabry_hardware__rosidl_typesupport_c__pyext-0448f8a769abbb39f783.json",
+					"name" : "sabry_hardware__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sabry_hardware__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sabry_hardware__rosidl_typesupport_cpp-b6235e02b226cf5217bc.json",
+					"name" : "sabry_hardware__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sabry_hardware__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sabry_hardware__rosidl_typesupport_fastrtps_c-376acc0bc49c09695a13.json",
+					"name" : "sabry_hardware__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sabry_hardware__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sabry_hardware__rosidl_typesupport_fastrtps_c__pyext-466a8b4b5222974f7729.json",
+					"name" : "sabry_hardware__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sabry_hardware__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sabry_hardware__rosidl_typesupport_fastrtps_cpp-a99cc084a6d2a496e915.json",
+					"name" : "sabry_hardware__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sabry_hardware__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sabry_hardware__rosidl_typesupport_introspection_c-248c4b5d18df2c61e6b3.json",
+					"name" : "sabry_hardware__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sabry_hardware__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sabry_hardware__rosidl_typesupport_introspection_c__pyext-cc478a4a1bc336d47326.json",
+					"name" : "sabry_hardware__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sabry_hardware__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sabry_hardware__rosidl_typesupport_introspection_cpp-d6954f61c4aed8cd1f3a.json",
+					"name" : "sabry_hardware__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sabry_hardware_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sabry_hardware_uninstall-780a3f9f5443198b9934.json",
+					"name" : "sabry_hardware_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-053bba925e2ca323cada.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/vboxuser/workspaces/ros2_py_ws/build/sabry_hardware",
+		"source" : "/home/vboxuser/workspaces/ros2_py_ws/src/sabry_hardware"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

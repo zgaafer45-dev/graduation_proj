@@ -1,0 +1,5 @@
+[console_scripts]
+joint_state_to_microros = publisher.microros:main
+pid_stepper_controller = publisher.pid_controller:main
+simple_publisher = publisher.pub:main
+

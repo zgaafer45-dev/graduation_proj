@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from sabry_hardware/srv/ChangeTool.srv
+// generated code does not contain a copyright notice
+
+
+module sabry_hardware {
+  module srv {
+    struct ChangeTool_Request {
+      string tool_name;
+    };
+    struct ChangeTool_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

@@ -1,0 +1,23 @@
+[1.611s] Invoking command in '/home/vboxuser/workspaces/ros2_py_ws/src/publisher': PYTHONPATH=/home/vboxuser/workspaces/ros2_py_ws/build/publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/publisher build --build-base /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build install --record /home/vboxuser/workspaces/ros2_py_ws/build/publisher/install.log --single-version-externally-managed install_data
+[2.456s] running egg_info
+[2.457s] writing ../../build/publisher/publisher.egg-info/PKG-INFO
+[2.458s] writing dependency_links to ../../build/publisher/publisher.egg-info/dependency_links.txt
+[2.459s] writing entry points to ../../build/publisher/publisher.egg-info/entry_points.txt
+[2.460s] writing requirements to ../../build/publisher/publisher.egg-info/requires.txt
+[2.460s] writing top-level names to ../../build/publisher/publisher.egg-info/top_level.txt
+[2.462s] reading manifest file '../../build/publisher/publisher.egg-info/SOURCES.txt'
+[2.463s] writing manifest file '../../build/publisher/publisher.egg-info/SOURCES.txt'
+[2.464s] running build
+[2.464s] running build_py
+[2.469s] running install
+[2.469s] running install_lib
+[2.469s] running install_data
+[2.469s] running install_egg_info
+[2.469s] removing '/home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages/publisher-0.0.0-py3.10.egg-info' (and everything under it)
+[2.485s] Copying ../../build/publisher/publisher.egg-info to /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages/publisher-0.0.0-py3.10.egg-info
+[2.507s] running install_scripts
+[2.517s] Installing joint_state_to_microros script to /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/publisher
+[2.527s] Installing pid_stepper_controller script to /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/publisher
+[2.529s] Installing simple_publisher script to /home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/publisher
+[2.535s] writing list of installed files to '/home/vboxuser/workspaces/ros2_py_ws/build/publisher/install.log'
+[2.628s] Invoked command in '/home/vboxuser/workspaces/ros2_py_ws/src/publisher' returned '0': PYTHONPATH=/home/vboxuser/workspaces/ros2_py_ws/build/publisher/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vboxuser/workspaces/ros2_py_ws/install/publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/publisher build --build-base /home/vboxuser/workspaces/ros2_py_ws/build/publisher/build install --record /home/vboxuser/workspaces/ros2_py_ws/build/publisher/install.log --single-version-externally-managed install_data

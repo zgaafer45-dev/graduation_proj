@@ -1,0 +1,10 @@
+setup.py
+scripts/__init__.py
+scripts/add_two_ints_server.py
+scripts/linear_motor_node.py
+scripts/templete.py
+scripts/tool_change_manager.py
+scripts.egg-info/PKG-INFO
+scripts.egg-info/SOURCES.txt
+scripts.egg-info/dependency_links.txt
+scripts.egg-info/top_level.txt

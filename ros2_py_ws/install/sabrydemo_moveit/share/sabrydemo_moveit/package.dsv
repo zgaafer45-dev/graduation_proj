@@ -1,0 +1,8 @@
+source;share/sabrydemo_moveit/hook/cmake_prefix_path.ps1
+source;share/sabrydemo_moveit/hook/cmake_prefix_path.dsv
+source;share/sabrydemo_moveit/hook/cmake_prefix_path.sh
+source;share/sabrydemo_moveit/local_setup.bash
+source;share/sabrydemo_moveit/local_setup.dsv
+source;share/sabrydemo_moveit/local_setup.ps1
+source;share/sabrydemo_moveit/local_setup.sh
+source;share/sabrydemo_moveit/local_setup.zsh
