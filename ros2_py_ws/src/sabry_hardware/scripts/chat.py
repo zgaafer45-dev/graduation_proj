@@ -1,0 +1,278 @@
+#!/usr/bin/env python3
+
+import rclpy
+from rclpy.node import Node
+from rclpy.action import ActionClient
+from moveit_msgs.action import MoveGroup
+from moveit_msgs.srv import ApplyPlanningScene
+from moveit_msgs.msg import Constraints, PositionConstraint, OrientationConstraint
+from moveit_msgs.msg import PlanningScene, CollisionObject, AttachedCollisionObject, RobotState
+from shape_msgs.msg import SolidPrimitive
+from geometry_msgs.msg import PoseStamped
+from sabry_hardware.srv import ChangeTool, LinearMotor
+
+
+class ToolChangeManager(Node):
+
+    def __init__(self):
+        super().__init__("tool_change_manager")
+
+        # Service server
+        self.create_service(ChangeTool, "change_tool", self.change_tool_callback)
+
+        # Clients
+        self.move_client = ActionClient(self, MoveGroup, "/move_action")
+        self.scene_client = self.create_client(ApplyPlanningScene, "apply_planning_scene")
+        self.tool_client = self.create_client(LinearMotor, "tool_changer/set_state")
+
+        # Wait for dependencies
+        self.move_client.wait_for_server()
+        self.scene_client.wait_for_service()
+        self.tool_client.wait_for_service()
+
+        # State
+        self.state = "IDLE"
+        self.current_tool = None
+        self.pending_response = None
+
+        self.get_logger().info("ToolChangeManager ready")
+
+    # ==========================================================
+    # SERVICE ENTRY
+    # ==========================================================
+    def change_tool_callback(self, request, response):
+
+        if self.state != "IDLE":
+            response.success = False
+            response.message = "Busy"
+            return response
+
+        if request.tool_name != "gripper":
+            response.success = False
+            response.message = "Only gripper supported"
+            return response
+
+        self.pending_response = response
+        self.start_sequence()
+
+        return response  # Will be filled later
+
+    # ==========================================================
+    # STATE MACHINE START
+    # ==========================================================
+    def start_sequence(self):
+        self.get_logger().info("Starting gripper pickup sequence")
+
+        self.state = "MOVE_APPROACH"
+        self.send_move(self.offset_pose(self.get_dock_pose(), dz=0.10))
+
+    # ==========================================================
+    # MOVE HANDLING
+    # ==========================================================
+    def send_move(self, pose: PoseStamped):
+        goal = self.create_goal(pose)
+        future = self.move_client.send_goal_async(goal)
+        future.add_done_callback(self.goal_response_cb)
+
+    def goal_response_cb(self, future):
+        goal_handle = future.result()
+        if not goal_handle.accepted:
+            self.abort("Move rejected")
+            return
+
+        result_future = goal_handle.get_result_async()
+        result_future.add_done_callback(self.move_result_cb)
+
+    def move_result_cb(self, future):
+        result = future.result().result
+        if result.error_code.val != 1:
+            self.abort(f"Move failed {result.error_code.val}")
+            return
+
+        # Advance state
+        if self.state == "MOVE_APPROACH":
+            self.state = "MOVE_DOCK"
+            self.send_move(self.get_dock_pose())
+
+        elif self.state == "MOVE_DOCK":
+            self.state = "UNLOCK"
+            self.send_tool_command(2)
+
+        elif self.state == "MOVE_LIFT":
+            self.finish_success()
+
+    # ==========================================================
+    # TOOL ACTUATOR
+    # ==========================================================
+    def send_tool_command(self, cmd):
+        req = LinearMotor.Request()
+        req.command = cmd
+        future = self.tool_client.call_async(req)
+        future.add_done_callback(self.tool_result_cb)
+
+    def tool_result_cb(self, future):
+        result = future.result()
+        if result is None or not result.success:
+            self.abort("Tool command failed")
+            return
+
+        if self.state == "UNLOCK":
+            self.state = "ATTACH"
+            self.attach_gripper()
+
+        elif self.state == "LOCK":
+            self.state = "MOVE_LIFT"
+            self.send_move(self.offset_pose(self.get_dock_pose(), dz=0.15))
+
+    # ==========================================================
+    # PLANNING SCENE
+    # ==========================================================
+    def attach_gripper(self):
+        ps = PlanningScene()
+        ps.is_diff = True
+        ps.robot_state.is_diff = True
+
+        co = CollisionObject()
+        co.id = "gripper"
+        co.header.frame_id = "tool_mount_link"
+
+        primitive = SolidPrimitive()
+        primitive.type = SolidPrimitive.CYLINDER
+        primitive.dimensions = [0.12, 0.012]
+
+        co.primitives.append(primitive)
+        co.primitive_poses.append(self.relative_pose().pose)
+
+        aco = AttachedCollisionObject()
+        aco.object = co
+        aco.link_name = "tool_mount_link"
+        aco.touch_links = ["tool_mount_link","gripper_base","gripper","screwdriver_base"]
+
+        ps.robot_state.attached_collision_objects.append(aco)
+
+        req = ApplyPlanningScene.Request()
+        req.scene = ps
+
+        future = self.scene_client.call_async(req)
+        future.add_done_callback(self.attach_done_cb)
+
+    def attach_done_cb(self, future):
+        self.state = "LOCK"
+        self.send_tool_command(1)
+
+    # ==========================================================
+    # SUCCESS / ABORT
+    # ==========================================================
+    def finish_success(self):
+        self.state = "IDLE"
+        self.current_tool = "gripper"
+
+        if self.pending_response:
+            self.pending_response.success = True
+            self.pending_response.message = "Gripper attached"
+
+        self.get_logger().info("Gripper pickup complete")
+
+    def abort(self, message):
+        self.get_logger().error(message)
+        self.state = "IDLE"
+
+        if self.pending_response:
+            self.pending_response.success = False
+            self.pending_response.message = message
+
+    # ==========================================================
+    # HELPERS
+    # ==========================================================
+    def get_dock_pose(self):
+        pose = PoseStamped()
+        pose.header.frame_id = "world"
+        pose.pose.position.x = 0.193
+        pose.pose.position.y = -0.287
+        pose.pose.position.z = 0.238
+        pose.pose.orientation.x = 1.0
+        pose.pose.orientation.y = 0.0
+        pose.pose.orientation.z = 0.0
+        pose.pose.orientation.w = 0.0
+        return pose
+
+    def offset_pose(self, base, dx=0, dy=0, dz=0):
+        pose = PoseStamped()
+        pose.header.frame_id = base.header.frame_id
+        pose.pose.position.x = base.pose.position.x + dx
+        pose.pose.position.y = base.pose.position.y + dy
+        pose.pose.position.z = base.pose.position.z + dz
+        pose.pose.orientation = base.pose.orientation
+        return pose
+
+    def relative_pose(self):
+        pose = PoseStamped()
+        pose.header.frame_id = "tool_mount_link"
+        pose.pose.position.z = 0.075
+        pose.pose.orientation.w = 1.0
+        return pose
+
+    def create_goal(self, pose):
+        pos = PositionConstraint()
+        pos.header.frame_id = pose.header.frame_id
+        pos.link_name = "tool_mount_link"
+
+        primitive = SolidPrimitive()
+        primitive.type = SolidPrimitive.BOX
+        primitive.dimensions = [0.01, 0.01, 0.01]
+
+        pos.constraint_region.primitives.append(primitive)
+        pos.constraint_region.primitive_poses.append(pose.pose)
+        pos.weight = 1.0
+
+        ori = OrientationConstraint()
+        ori.header.frame_id = pose.header.frame_id
+        ori.link_name = "tool_mount_link"
+        ori.orientation = pose.pose.orientation
+        ori.absolute_x_axis_tolerance = 0.3
+        ori.absolute_y_axis_tolerance = 0.3
+        ori.absolute_z_axis_tolerance = 0.3
+        ori.weight = 1.0
+
+        constraints = Constraints()
+        constraints.position_constraints.append(pos)
+        constraints.orientation_constraints.append(ori)
+
+        goal = MoveGroup.Goal()
+        goal.request.workspace_parameters.min_corner.x = -1.0
+        goal.request.workspace_parameters.min_corner.y = -1.0
+        goal.request.workspace_parameters.min_corner.z = 0.0
+        goal.request.workspace_parameters.max_corner.x = 1.0
+        goal.request.workspace_parameters.max_corner.y = 1.0
+        goal.request.workspace_parameters.max_corner.z = 1.5
+        goal.request.group_name = "arm"
+        goal.request.pipeline_id = "ompl"
+        goal.request.goal_constraints.append(constraints)
+        goal.request.num_planning_attempts = 10
+        goal.request.allowed_planning_time = 15.0
+        goal.request.max_velocity_scaling_factor = 1.0
+        goal.request.max_acceleration_scaling_factor = 1.0
+        goal.request.start_state = RobotState()
+        goal.request.start_state.is_diff = False
+        goal.request.start_state = self.get_current_robot_state()
+
+        return goal
+    
+
+    def get_current_robot_state(self):
+        state = RobotState()
+        # Fill with current joint positions or leave empty if you want MoveIt to auto-fill
+        state.is_diff = True
+        return state
+
+
+def main():
+    rclpy.init()
+    node = ToolChangeManager()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
+
+
+if __name__ == "__main__":
+    main()
