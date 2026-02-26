@@ -76,14 +76,13 @@ class ToolChangeManager(Node):
 
         self.state = "MOVE_APPROACH"
         # self.send_move(self.offset_pose(self.get_dock_pose(), dz=0.10))
-        p = self.get_transform('world', self.tool_poses['gripper']['mount'])
-        self.get_logger().info(str(p))
-        self.send_move(self.offset_pose(p, dz=0.10))
+        self.send_move(self.offset_pose(self.get_transform('base_link', self.tool_poses['gripper']['mount']), dz=0.10))
 
     # ==========================================================
     # MOVE HANDLING
     # ==========================================================
     def send_move(self, pose: PoseStamped):
+        self.get_logger().info(f"Sending move to: "f"x={pose.pose.position.x:.4f}, "f"y={pose.pose.position.y:.4f}, " f"z={pose.pose.position.z:.4f}")
         goal = self.create_goal(pose)
         future = self.move_client.send_goal_async(goal)
         future.add_done_callback(self.goal_response_cb)
@@ -107,7 +106,7 @@ class ToolChangeManager(Node):
         if self.state == "MOVE_APPROACH":
             self.state = "MOVE_DOCK"
             # self.send_move(self.get_dock_pose())
-            self.send_move(self.get_transform('world', self.tool_poses['gripper']['mount']))
+            self.send_move(self.get_transform('base_link', self.tool_poses['gripper']['mount']))
 
         elif self.state == "MOVE_DOCK":
             self.state = "UNLOCK"
@@ -138,7 +137,7 @@ class ToolChangeManager(Node):
         elif self.state == "LOCK":
             self.state = "MOVE_LIFT"
             # self.send_move(self.offset_pose(self.get_dock_pose(), dz=0.15))
-            self.send_move(self.offset_pose(self.get_transform('world', self.tool_poses['gripper']['mount']), dz=0.15))
+            self.send_move(self.offset_pose(self.get_transform('base_link', self.tool_poses['gripper']['mount']), dz=0.15))
 
     # ==========================================================
     # PLANNING SCENE
@@ -218,17 +217,25 @@ class ToolChangeManager(Node):
             now = rclpy.time.Time()
             transform = self.tf_buffer.lookup_transform(
                 target_frame, source_frame, now, rclpy.duration.Duration(seconds=timeout))
-            
+           
+            t = transform.transform.translation
+            r = transform.transform.rotation
+
+            self.get_logger().info(
+                f"TF {source_frame} -> {target_frame} | "
+                f"Translation: x={t.x:.4f}, y={t.y:.4f}, z={t.z:.4f} | "
+                f"Rotation (quat): x={r.x:.4f}, y={r.y:.4f}, z={r.z:.4f}, w={r.w:.4f}"
+            )
             pose = PoseStamped()
             pose.header.frame_id = target_frame
             pose.header.stamp = self.get_clock().now().to_msg()
-            pose.pose.position.x = transform.transform.translation.x
-            pose.pose.position.y = transform.transform.translation.y
-            pose.pose.position.z = transform.transform.translation.z
-            pose.pose.orientation.x = transform.transform.rotation.x;
-            pose.pose.orientation.y = transform.transform.rotation.y;
-            pose.pose.orientation.z = transform.transform.rotation.z;
-            pose.pose.orientation.w = transform.transform.rotation.w;
+            pose.pose.position.x = transform.transform.translation.x 
+            pose.pose.position.y = transform.transform.translation.y 
+            pose.pose.position.z = transform.transform.translation.z -0.018
+            pose.pose.orientation.x = transform.transform.rotation.x
+            pose.pose.orientation.y = transform.transform.rotation.y
+            pose.pose.orientation.z = transform.transform.rotation.z
+            pose.pose.orientation.w = transform.transform.rotation.w
             
             return pose
         except Exception as e:
