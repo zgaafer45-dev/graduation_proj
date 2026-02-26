@@ -223,7 +223,10 @@ class ToolChangeManager(Node):
             pose.pose.position.x = transform.transform.translation.x
             pose.pose.position.y = transform.transform.translation.y
             pose.pose.position.z = transform.transform.translation.z
-            pose.pose.orientation = transform.transform.rotation
+            pose.pose.orientation.x = transform.transform.rotation.x;
+            pose.pose.orientation.y = transform.transform.rotation.y;
+            pose.pose.orientation.z = transform.transform.rotation.z;
+            pose.pose.orientation.w = transform.transform.rotation.w;
             
             return pose
         except Exception as e:
