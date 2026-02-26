@@ -231,7 +231,7 @@ class ToolChangeManager(Node):
             pose.header.stamp = self.get_clock().now().to_msg()
             pose.pose.position.x = transform.transform.translation.x 
             pose.pose.position.y = transform.transform.translation.y 
-            pose.pose.position.z = transform.transform.translation.z -0.018
+            pose.pose.position.z = transform.transform.translation.z + 0.018
             pose.pose.orientation.x = transform.transform.rotation.x
             pose.pose.orientation.y = transform.transform.rotation.y
             pose.pose.orientation.z = transform.transform.rotation.z
