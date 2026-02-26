@@ -76,7 +76,9 @@ class ToolChangeManager(Node):
 
         self.state = "MOVE_APPROACH"
         # self.send_move(self.offset_pose(self.get_dock_pose(), dz=0.10))
-        self.send_move(self.offset_pose(self.get_transform('world', self.tool_poses['gripper']['mount']), dz=0.10))
+        p = self.get_transform('world', self.tool_poses['gripper']['mount'])
+        self.get_logger().info(str(p))
+        self.send_move(self.offset_pose(p, dz=0.10))
 
     # ==========================================================
     # MOVE HANDLING
