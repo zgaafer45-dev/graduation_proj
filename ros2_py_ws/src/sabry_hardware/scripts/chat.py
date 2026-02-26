@@ -76,7 +76,7 @@ class ToolChangeManager(Node):
 
         self.state = "MOVE_APPROACH"
         # self.send_move(self.offset_pose(self.get_dock_pose(), dz=0.10))
-        self.send_move(self.offset_pose(self.get_transform('world', self.tool_poses['gripper']['dock']), dz=0.10))
+        self.send_move(self.offset_pose(self.get_transform('world', self.tool_poses['gripper']['mount']), dz=0.10))
 
     # ==========================================================
     # MOVE HANDLING
@@ -105,7 +105,7 @@ class ToolChangeManager(Node):
         if self.state == "MOVE_APPROACH":
             self.state = "MOVE_DOCK"
             # self.send_move(self.get_dock_pose())
-            self.send_move(self.get_transform('world', self.tool_poses['gripper']['dock']))
+            self.send_move(self.get_transform('world', self.tool_poses['gripper']['mount']))
 
         elif self.state == "MOVE_DOCK":
             self.state = "UNLOCK"
@@ -136,7 +136,7 @@ class ToolChangeManager(Node):
         elif self.state == "LOCK":
             self.state = "MOVE_LIFT"
             # self.send_move(self.offset_pose(self.get_dock_pose(), dz=0.15))
-            self.send_move(self.offset_pose(self.get_transform('world', self.tool_poses['gripper']['dock']), dz=0.15))
+            self.send_move(self.offset_pose(self.get_transform('world', self.tool_poses['gripper']['mount']), dz=0.15))
 
     # ==========================================================
     # PLANNING SCENE
