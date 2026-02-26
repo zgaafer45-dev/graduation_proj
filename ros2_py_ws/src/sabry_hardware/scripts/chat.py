@@ -10,6 +10,8 @@ from moveit_msgs.msg import PlanningScene, CollisionObject, AttachedCollisionObj
 from shape_msgs.msg import SolidPrimitive
 from geometry_msgs.msg import PoseStamped
 from sabry_hardware.srv import ChangeTool, LinearMotor
+from tf2_ros import TransformListener, Buffer
+import tf2_geometry_msgs
 
 
 class ToolChangeManager(Node):
@@ -29,6 +31,15 @@ class ToolChangeManager(Node):
         self.move_client.wait_for_server()
         self.scene_client.wait_for_service()
         self.tool_client.wait_for_service()
+
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
+
+        self.tool_poses = {
+            'gripper': {'dock': 'gripper_docking_point', 'mount': 'gripper_mount'},
+            'screwdriver': {'dock': 'screwdriver_docking_point', 'mount': 'screwdriver_mount'},
+            'camera': {'dock': 'camera_docking_point', 'mount': 'camera_mount'}
+        }
 
         # State
         self.state = "IDLE"
@@ -64,7 +75,8 @@ class ToolChangeManager(Node):
         self.get_logger().info("Starting gripper pickup sequence")
 
         self.state = "MOVE_APPROACH"
-        self.send_move(self.offset_pose(self.get_dock_pose(), dz=0.10))
+        # self.send_move(self.offset_pose(self.get_dock_pose(), dz=0.10))
+        self.send_move(self.offset_pose(self.get_transform('world', self.tool_poses['gripper']['dock']), dz=0.10))
 
     # ==========================================================
     # MOVE HANDLING
@@ -92,7 +104,8 @@ class ToolChangeManager(Node):
         # Advance state
         if self.state == "MOVE_APPROACH":
             self.state = "MOVE_DOCK"
-            self.send_move(self.get_dock_pose())
+            # self.send_move(self.get_dock_pose())
+            self.send_move(self.get_transform('world', self.tool_poses['gripper']['dock']))
 
         elif self.state == "MOVE_DOCK":
             self.state = "UNLOCK"
@@ -122,7 +135,8 @@ class ToolChangeManager(Node):
 
         elif self.state == "LOCK":
             self.state = "MOVE_LIFT"
-            self.send_move(self.offset_pose(self.get_dock_pose(), dz=0.15))
+            # self.send_move(self.offset_pose(self.get_dock_pose(), dz=0.15))
+            self.send_move(self.offset_pose(self.get_transform('world', self.tool_poses['gripper']['dock']), dz=0.15))
 
     # ==========================================================
     # PLANNING SCENE
@@ -195,6 +209,26 @@ class ToolChangeManager(Node):
         pose.pose.orientation.z = 0.0
         pose.pose.orientation.w = 0.0
         return pose
+    
+    def get_transform(self, target_frame, source_frame, timeout=2.0):
+        """Get transform between frames with error handling"""
+        try:
+            now = rclpy.time.Time()
+            transform = self.tf_buffer.lookup_transform(
+                target_frame, source_frame, now, rclpy.duration.Duration(seconds=timeout))
+            
+            pose = PoseStamped()
+            pose.header.frame_id = target_frame
+            pose.header.stamp = self.get_clock().now().to_msg()
+            pose.pose.position.x = transform.transform.translation.x
+            pose.pose.position.y = transform.transform.translation.y
+            pose.pose.position.z = transform.transform.translation.z
+            pose.pose.orientation = transform.transform.rotation
+            
+            return pose
+        except Exception as e:
+            self.get_logger().error(f"TF lookup failed: {str(e)}")
+            return None
 
     def offset_pose(self, base, dx=0, dy=0, dz=0):
         pose = PoseStamped()
