@@ -58,25 +58,47 @@ class ToolChangeManager(Node):
             response.message = "Busy"
             return response
 
-        if request.tool_name != "gripper":
+        if request.tool_name == "gripper":
+            self.pending_response = response
+            self.start_attach_sequence()
+
+        elif request.tool_name == "none":
+            if self.current_tool is None:
+                response.success = False
+                response.message = "No tool attached"
+                return response
+
+            self.pending_response = response
+            self.start_detach_sequence()
+
+        else:
             response.success = False
-            response.message = "Only gripper supported"
+            response.message = "Unsupported tool"
             return response
-
-        self.pending_response = response
-        self.start_sequence()
-
-        return response  # Will be filled later
+        
+        return response
 
     # ==========================================================
     # STATE MACHINE START
     # ==========================================================
-    def start_sequence(self):
+    def start_attach_sequence(self):
         self.get_logger().info("Starting gripper pickup sequence")
 
         self.state = "MOVE_APPROACH"
         # self.send_move(self.offset_pose(self.get_dock_pose(), dz=0.10))
         self.send_move(self.offset_pose(self.get_transform('base_link', self.tool_poses['gripper']['mount']), dz=0.10))
+
+    def start_detach_sequence(self):
+        self.get_logger().info("Starting gripper detach sequence")
+
+        self.state = "DETACH_MOVE_APPROACH"
+
+        pose = self.get_transform('world', self.tool_poses['gripper']['mount'])
+        if pose is None:
+            self.abort("Dock transform not available")
+            return
+
+        self.send_move(self.offset_pose(pose, dz=0.10))
 
     # ==========================================================
     # MOVE HANDLING
@@ -114,6 +136,21 @@ class ToolChangeManager(Node):
 
         elif self.state == "MOVE_LIFT":
             self.finish_success()
+            
+        elif self.state == "DETACH_MOVE_APPROACH":
+            self.state = "DETACH_MOVE_DOCK"
+            pose = self.get_transform('world', self.tool_poses['gripper']['mount'])
+            if pose is None:
+                self.abort("Dock transform not available")
+                return
+            self.send_move(pose)
+
+        elif self.state == "DETACH_MOVE_DOCK":
+            self.state = "DETACH_UNLOCK"
+            self.send_tool_command(2)
+
+        elif self.state == "DETACH_MOVE_LIFT":
+            self.finish_detach_success()
 
     # ==========================================================
     # TOOL ACTUATOR
@@ -138,6 +175,18 @@ class ToolChangeManager(Node):
             self.state = "MOVE_LIFT"
             # self.send_move(self.offset_pose(self.get_dock_pose(), dz=0.15))
             self.send_move(self.offset_pose(self.get_transform('base_link', self.tool_poses['gripper']['mount']), dz=0.15))
+
+        elif self.state == "DETACH_UNLOCK":
+            self.state = "DETACH_REMOVE"
+            self.detach_gripper()
+
+        elif self.state == "DETACH_LOCK":
+            self.state = "DETACH_MOVE_LIFT"
+            pose = self.get_transform('world', self.tool_poses['gripper']['mount'])
+            if pose is None:
+                self.abort("Dock transform not available")
+                return
+            self.send_move(self.offset_pose(pose, dz=0.15))
 
     # ==========================================================
     # PLANNING SCENE
@@ -175,6 +224,28 @@ class ToolChangeManager(Node):
         self.state = "LOCK"
         self.send_tool_command(1)
 
+    def detach_gripper(self):
+        ps = PlanningScene()
+        ps.is_diff = True
+        ps.robot_state.is_diff = True
+
+        # Remove attached object
+        aco = AttachedCollisionObject()
+        aco.object.id = "gripper"
+        aco.object.operation = CollisionObject.REMOVE
+
+        ps.robot_state.attached_collision_objects.append(aco)
+
+        req = ApplyPlanningScene.Request()
+        req.scene = ps
+
+        future = self.scene_client.call_async(req)
+        future.add_done_callback(self.detach_done_cb)
+
+    def detach_done_cb(self, future):
+        self.state = "DETACH_LOCK"
+        self.send_tool_command(2)
+
     # ==========================================================
     # SUCCESS / ABORT
     # ==========================================================
@@ -187,6 +258,16 @@ class ToolChangeManager(Node):
             self.pending_response.message = "Gripper attached"
 
         self.get_logger().info("Gripper pickup complete")
+
+    def finish_detach_success(self):
+        self.state = "IDLE"
+        self.current_tool = None
+
+        if self.pending_response:
+            self.pending_response.success = True
+            self.pending_response.message = "Tool detached"
+
+        self.get_logger().info("Tool detach complete")
 
     def abort(self, message):
         self.get_logger().error(message)
@@ -304,7 +385,6 @@ class ToolChangeManager(Node):
 
         return goal
     
-
     def get_current_robot_state(self):
         state = RobotState()
         # Fill with current joint positions or leave empty if you want MoveIt to auto-fill
