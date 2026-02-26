@@ -196,25 +196,22 @@ class ToolChangeManager(Node):
         ps.is_diff = True
         ps.robot_state.is_diff = True
 
-        co_remove = CollisionObject()
-        co_remove.id = "gripper"
-        co_remove.operation = CollisionObject.REMOVE
-        ps.world.collision_objects.append(co_remove)
+        co = CollisionObject()
+        co.id = "gripper"
+        co.header.frame_id = "tool_mount_link"
 
-        # co = CollisionObject()
-        # co.id = "gripper"
-        # co.header.frame_id = "tool_mount_link"
+        primitive = SolidPrimitive()
+        primitive.type = SolidPrimitive.CYLINDER
+        primitive.dimensions = [0.12, 0.012]
 
-        # primitive = SolidPrimitive()
-        # primitive.type = SolidPrimitive.CYLINDER
-        # primitive.dimensions = [0.12, 0.012]
-
-        # co.primitives.append(primitive)
-        # co.primitive_poses.append(self.relative_pose().pose)
+        co.primitives.append(primitive)
+        co.primitive_poses.append(self.relative_pose().pose)
+        co.operation = CollisionObject.ADD
 
         aco = AttachedCollisionObject()
         aco.link_name = "tool_mount_link"
-        aco.object.id = "gripper"
+        # aco.object.id = "gripper"
+        aco.object = co
         aco.object.operation = CollisionObject.ADD
         aco.touch_links = ["tool_mount_link","gripper_base","gripper","screwdriver_base"]
 
