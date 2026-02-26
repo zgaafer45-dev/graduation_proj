@@ -196,6 +196,11 @@ class ToolChangeManager(Node):
         ps.is_diff = True
         ps.robot_state.is_diff = True
 
+        co_remove = CollisionObject()
+        co_remove.id = "gripper"
+        co_remove.operation = CollisionObject.REMOVE
+        ps.world.collision_objects.append(co_remove)
+
         co = CollisionObject()
         co.id = "gripper"
         co.header.frame_id = "tool_mount_link"
