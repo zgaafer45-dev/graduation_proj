@@ -2,7 +2,7 @@
 
 import rclpy
 from rclpy.node import Node
-from rclpy.action import ActionClient
+from rclpy.action import ActionClient, ActionServer
 from moveit_msgs.action import MoveGroup
 from moveit_msgs.srv import ApplyPlanningScene
 from moveit_msgs.msg import Constraints, PositionConstraint, OrientationConstraint
@@ -10,8 +10,10 @@ from moveit_msgs.msg import PlanningScene, CollisionObject, AttachedCollisionObj
 from shape_msgs.msg import SolidPrimitive
 from geometry_msgs.msg import PoseStamped
 from sabry_hardware.srv import ChangeTool, LinearMotor
+from sabry_hardware.action import ChangeTool
 from tf2_ros import TransformListener, Buffer
 import tf2_geometry_msgs
+import asyncio
 
 
 class ToolChangeManager(Node):
@@ -20,7 +22,13 @@ class ToolChangeManager(Node):
         super().__init__("tool_change_manager")
 
         # Service server
-        self.create_service(ChangeTool, "change_tool", self.change_tool_callback)
+        # self.create_service(ChangeTool, "change_tool", self.change_tool_callback)
+        self._action_server = ActionServer(
+            self,
+            ChangeTool,
+            "change_tool",
+            self.execute_callback
+        )
 
         # Clients
         self.move_client = ActionClient(self, MoveGroup, "/move_action")
@@ -44,7 +52,10 @@ class ToolChangeManager(Node):
         # State
         self.state = "IDLE"
         self.current_tool = None
-        self.pending_response = None
+        # self.pending_response = None
+        self.goal_handle = None
+        self._result = None
+        self.goal_active = False
 
         self.get_logger().info("ToolChangeManager ready")
 
@@ -77,12 +88,62 @@ class ToolChangeManager(Node):
             return response
         
         return response
+    
+    def execute_callback(self, goal_handle):
+
+        if self.state != "IDLE":
+            result = ChangeTool.Result()
+            result.success = False
+            result.message = "Busy"
+            goal_handle.abort()
+            return result
+
+        self.goal_handle = goal_handle
+        self.goal_active = True
+        self._result = None
+
+        tool_name = goal_handle.request.tool_name
+
+        if tool_name == "gripper":
+            self.start_attach_sequence()
+
+        elif tool_name == "none":
+            if self.current_tool is None:
+                result = ChangeTool.Result()
+                result.success = False
+                result.message = "No tool attached"
+                goal_handle.abort()
+                return result
+            self.start_detach_sequence()
+
+        else:
+            result = ChangeTool.Result()
+            result.success = False
+            result.message = "Unsupported tool"
+            goal_handle.abort()
+            return result
+
+
+        result = self._result
+
+        # self.goal_active = False
+        # self.goal_handle = None
+        # self._result = None
+
+        return result
+        
+    def publish_feedback(self, text):
+        
+        feedback = ChangeTool.Feedback()
+        feedback.current_state = text
+        self.goal_handle.publish_feedback(feedback)
 
     # ==========================================================
     # STATE MACHINE START
     # ==========================================================
     def start_attach_sequence(self):
         self.get_logger().info("Starting gripper pickup sequence")
+        self.publish_feedback("Moving to approach position")
 
         self.state = "MOVE_APPROACH"
         # self.send_move(self.offset_pose(self.get_dock_pose(), dz=0.10))
@@ -90,6 +151,7 @@ class ToolChangeManager(Node):
 
     def start_detach_sequence(self):
         self.get_logger().info("Starting gripper detach sequence")
+        self.publish_feedback("Staring detach")
 
         self.state = "DETACH_MOVE_APPROACH"
 
@@ -110,6 +172,7 @@ class ToolChangeManager(Node):
         future.add_done_callback(self.goal_response_cb)
 
     def goal_response_cb(self, future):
+    
         goal_handle = future.result()
         if not goal_handle.accepted:
             self.abort("Move rejected")
@@ -119,6 +182,8 @@ class ToolChangeManager(Node):
         result_future.add_done_callback(self.move_result_cb)
 
     def move_result_cb(self, future):
+        if not self.goal_active:
+            return
         result = future.result().result
         if result.error_code.val != 1:
             self.abort(f"Move failed {result.error_code.val}")
@@ -128,17 +193,21 @@ class ToolChangeManager(Node):
         if self.state == "MOVE_APPROACH":
             self.state = "MOVE_DOCK"
             # self.send_move(self.get_dock_pose())
+            self.publish_feedback("Docking tool")
             self.send_move(self.get_transform('base_link', self.tool_poses['gripper']['mount']))
 
         elif self.state == "MOVE_DOCK":
+            self.publish_feedback("Unlocking tool")
             self.state = "UNLOCK"
             self.send_tool_command(2)
 
         elif self.state == "MOVE_LIFT":
+            self.publish_feedback("Lifting tool")
             self.finish_success()
             
         elif self.state == "DETACH_MOVE_APPROACH":
             self.state = "DETACH_MOVE_DOCK"
+            self.publish_feedback("Undocking tool")
             pose = self.get_transform('world', self.tool_poses['gripper']['mount'])
             if pose is None:
                 self.abort("Dock transform not available")
@@ -147,6 +216,7 @@ class ToolChangeManager(Node):
 
         elif self.state == "DETACH_MOVE_DOCK":
             self.state = "DETACH_UNLOCK"
+            self.publish_feedback("Unlocking tool")
             self.send_tool_command(2)
 
         elif self.state == "DETACH_MOVE_LIFT":
@@ -162,6 +232,8 @@ class ToolChangeManager(Node):
         future.add_done_callback(self.tool_result_cb)
 
     def tool_result_cb(self, future):
+        if not self.goal_active:
+            return
         result = future.result()
         if result is None or not result.success:
             self.abort("Tool command failed")
@@ -224,6 +296,8 @@ class ToolChangeManager(Node):
         future.add_done_callback(self.attach_done_cb)
 
     def attach_done_cb(self, future):
+        if not self.goal_active:
+            return
         self.state = "LOCK"
         self.send_tool_command(1)
 
@@ -246,39 +320,84 @@ class ToolChangeManager(Node):
         future.add_done_callback(self.detach_done_cb)
 
     def detach_done_cb(self, future):
+        if not self.goal_active:
+            return
         self.state = "DETACH_LOCK"
         self.send_tool_command(2)
 
     # ==========================================================
     # SUCCESS / ABORT
     # ==========================================================
+    # def finish_success(self):
+    #     self.state = "IDLE"
+    #     self.current_tool = "gripper"
+
+    #     if self.pending_response:
+    #         self.pending_response.success = True
+    #         self.pending_response.message = "Gripper attached"
+
+    #     self.get_logger().info("Gripper pickup complete")
+
+    # def finish_detach_success(self):
+    #     self.state = "IDLE"
+    #     self.current_tool = None
+
+    #     if self.pending_response:
+    #         self.pending_response.success = True
+    #         self.pending_response.message = "Tool detached"
+
+    #     self.get_logger().info("Tool detach complete")
+
     def finish_success(self):
+
+        if not self.goal_active:
+            return
+
         self.state = "IDLE"
         self.current_tool = "gripper"
 
-        if self.pending_response:
-            self.pending_response.success = True
-            self.pending_response.message = "Gripper attached"
+        self._result = ChangeTool.Result()
+        self._result.success = True
+        self._result.message = "Gripper attached"
 
-        self.get_logger().info("Gripper pickup complete")
-
+        self.goal_handle.succeed()
+        self.goal_active = False
+    
     def finish_detach_success(self):
+
+        if not self.goal_active:
+            return
+
         self.state = "IDLE"
         self.current_tool = None
 
-        if self.pending_response:
-            self.pending_response.success = True
-            self.pending_response.message = "Tool detached"
+        self._result = ChangeTool.Result()
+        self._result.success = True
+        self._result.message = "Tool detached"
 
-        self.get_logger().info("Tool detach complete")
+        self.goal_handle.succeed()
+        self.goal_active = False
 
     def abort(self, message):
+        # self.get_logger().error(message)
+        # self.state = "IDLE"
+
+        # if self.pending_response:
+        #     self.pending_response.success = False
+        #     self.pending_response.message = message
+
+        if not self.goal_active:
+            return
+
         self.get_logger().error(message)
         self.state = "IDLE"
 
-        if self.pending_response:
-            self.pending_response.success = False
-            self.pending_response.message = message
+        self._result = ChangeTool.Result()
+        self._result.success = False
+        self._result.message = message
+
+        self.goal_handle.abort()
+        self.goal_active = False
 
     # ==========================================================
     # HELPERS
